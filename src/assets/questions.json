@@ -1,8 +1,8 @@
 {
     "page1": {
-      "question1": ["Remove Crepey Skin", "assets/images/intro-crepey-skin.png"],
-      "question2": ["Relieve Dry, Flaky Skin", "assets/images/intro-dry-flaky.png"],
-      "question3": ["Get Firmer, Tighter, Younger Looking Skin","assets/images/intro-firmer.png"]
+      "answer1": ["Remove Crepey Skin", "assets/images/intro-crepey-skin.png"],
+      "answer2": ["Relieve Dry, Flaky Skin", "assets/images/intro-dry-flaky.png"],
+      "answer3": ["Get Firmer, Tighter, Younger Looking Skin","assets/images/intro-firmer.png"]
     },
     "page2": {
       "question1": ["Loose skin on thighs and legs", "assets/images/pg-1-thighs.png"],

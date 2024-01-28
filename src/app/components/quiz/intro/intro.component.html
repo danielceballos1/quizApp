@@ -1,17 +1,4 @@
-<h1>Choose Your Goal</h1>
 
-<div *ngIf="page1Questions">
-  <div class="beauty-quiz-answer__wrapper" (click)="onNextPage(page1Questions.page1.question1[0])">
-  
-    <p class="beauty-quiz-answer__text">{{ page1Questions.page1.question1[0] }}</p>
-    <img  class="beauty-quiz-answer__img"[src]="page1Questions.page1.question1[1]" alt="">
-  </div>
-  <div class="beauty-quiz-answer__wrapper" (click)="onNextPage(page1Questions.page1.question2[0])">
-    <p  class="beauty-quiz-answer__text">{{ page1Questions.page1.question2[0] }}</p>
-    <img class="beauty-quiz-answer__img" [src]="page1Questions.page1.question2[1]" alt="">
-  </div>
-  <div class="beauty-quiz-answer__wrapper" (click)="onNextPage(page1Questions.page1.question3[0])">
-    <p  class="beauty-quiz-answer__text">{{ page1Questions.page1.question3[0] }}</p>
-    <img  class="beauty-quiz-answer__img"[src]="page1Questions.page1.question3[1]" alt="">
-  </div>
+<div *ngIf="page1Answers">
+  <app-answer *ngFor="let answer of page1Answers | keyvalue" [answer]="answer.value" (answerClicked)="onNextPage($event)"></app-answer>
 </div>
