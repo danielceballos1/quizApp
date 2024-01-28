@@ -1,17 +1,27 @@
 <div *ngIf="page2Questions">
+
   <div class="beauty-quiz-answer__wrapper" (click)="onQuestionClick(page2Questions.page2.question1)">
-    <p>{{ page2Questions.page2.question1 }}</p>
+    <p class="beauty-quiz-answer__text">{{ page2Questions.page2.question1[0] }}</p>
+    <img  class="beauty-quiz-answer__img"[src]="page2Questions.page2.question1[1]" alt="">
   </div>
-  <div class="beauty-quiz-answer__wrapper" (click)="onQuestionClick(page2Questions.page2.question2)">
-    <p>{{ page2Questions.page2.question2 }}</p>
+ 
+  <div class="beauty-quiz-answer__wrapper" (click)="onQuestionClick(page2Questions.page2.question1)">
+    <p class="beauty-quiz-answer__text">{{ page2Questions.page2.question2[0] }}</p>
+    <img  class="beauty-quiz-answer__img"[src]="page2Questions.page2.question2[1]" alt="">
   </div>
-  <div class="beauty-quiz-answer__wrapper" (click)="onQuestionClick(page2Questions.page2.question3)">
-    <p>{{ page2Questions.page2.question3 }}</p>
+
+  <div class="beauty-quiz-answer__wrapper" (click)="onQuestionClick(page2Questions.page2.question1)">
+    <p class="beauty-quiz-answer__text">{{ page2Questions.page2.question3[0] }}</p>
+    <img  class="beauty-quiz-answer__img"[src]="page2Questions.page2.question3[1]" alt="">
   </div>
-  <div class="beauty-quiz-answer__wrapper" (click)="onQuestionClick(page2Questions.page2.question4)">
-    <p>{{ page2Questions.page2.question4 }}</p>
+
+  <div class="beauty-quiz-answer__wrapper" (click)="onQuestionClick(page2Questions.page2.question1)">
+    <p class="beauty-quiz-answer__text">{{ page2Questions.page2.question4[0] }}</p>
+    <img  class="beauty-quiz-answer__img"[src]="page2Questions.page2.question4[1]" alt="">
   </div>
+
 </div>
 
 <button (click)="onNextPage()">Next</button>
 <button (click)="onSkipPage()">Skip</button>
+

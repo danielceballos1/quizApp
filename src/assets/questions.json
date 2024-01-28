@@ -1,14 +1,14 @@
 {
     "page1": {
-      "question1": ["Remove Crepey Skin", "assets/images/pg-1-loose-neck.png"],
-      "question2": ["Relieve Dry, Flaky Skin", "assets/images/pg-1-loose-neck.png"],
-      "question3": ["Get Firmer, Tighter, Younger Looking Skin","assets/images/pg-1-loose-neck.png"]
+      "question1": ["Remove Crepey Skin", "assets/images/intro-crepey-skin.png"],
+      "question2": ["Relieve Dry, Flaky Skin", "assets/images/intro-dry-flaky.png"],
+      "question3": ["Get Firmer, Tighter, Younger Looking Skin","assets/images/intro-firmer.png"]
     },
     "page2": {
-      "question1": "Loose skin on thighs and legs",
-      "question2": "Thinning skin on arms",
-      "question3": "Loose neck/jaw",
-      "question4": "Saggy belly"
+      "question1": ["Loose skin on thighs and legs", "assets/images/pg-1-thighs.png"],
+      "question2": ["Thinning skin on arms", "assets/images/pg-1-thin-arms.png"],
+      "question3": ["Loose neck/jaw", "assets/images/pg-1-loose-neck.png"],
+      "question4": ["Saggy belly", "assets/images/pg-1-saggy-belly.png"]
     },
     "page3": {
       "question1": {
