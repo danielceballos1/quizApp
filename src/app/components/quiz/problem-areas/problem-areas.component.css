@@ -1,0 +1,16 @@
+.beauty-quiz-answer__text{
+    width: 200px;
+    height: auto;
+    border: none;
+}
+.beauty-quiz-answer__img{
+    height: 100%;
+}
+.beauty-quiz-answer__wrapper{
+    height: 135px;
+    width: 517px;
+    border: 1px black solid;
+    background-color: gray;
+    display: flex;
+   justify-content:space-between;
+}
