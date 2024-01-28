@@ -1,0 +1,36 @@
+{
+    "page1": {
+      "question1": ["Remove Crepey Skin", "assets/images/pg-1-loose-neck.png"],
+      "question2": ["Relieve Dry, Flaky Skin", "assets/images/pg-1-loose-neck.png"],
+      "question3": ["Get Firmer, Tighter, Younger Looking Skin","assets/images/pg-1-loose-neck.png"]
+    },
+    "page2": {
+      "question1": "Loose skin on thighs and legs",
+      "question2": "Thinning skin on arms",
+      "question3": "Loose neck/jaw",
+      "question4": "Saggy belly"
+    },
+    "page3": {
+      "question1": {
+        "title": "Niacinamide",
+        "description": "This is a form of vitamin B that supports protein and collagen to promote optimal skin health"
+      },
+      "question2": {
+        "title": "Lipid Compound",
+        "description": "This improves moisture retention in the skin’s barrier for long-lasting hydration"
+      },
+      "question3": {
+        "title": "Ribose",
+        "description": "This reduces the appearance of thinning, wrinkled skin"
+      },
+      "question4": {
+        "title": "Jojoba Leaf Extract",
+        "description": "This is rich in antioxidants and helps stimulate the production of collagen"
+      },
+      "question5": {
+        "title": "Glycerin",
+        "description": "This helps keep skin hydrated"
+      }
+    }
+  }
+  

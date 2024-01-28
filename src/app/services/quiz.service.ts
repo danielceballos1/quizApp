@@ -2,7 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
-@Injectable()
+
+@Injectable({
+  providedIn: 'root'
+})
+
 export class QuizService {
   private currentPageSubject = new BehaviorSubject<number>(1);
   currentPage$ = this.currentPageSubject;
