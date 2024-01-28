@@ -1,1 +1,122 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,700;1,700&display=swap');
+
+/* Global variables defined using :root */
+:root {
+    --ff: "Work Sans", sans-serif;
+
+    --clr-blue: #0C233F;
+    --clr-gray: #556579;
+    --clr-gold: #E2C47C;
+    --clr-white: #FFFFFF;
+    --clr-beige: #EDDBB0;
+
+    --clr-btn: #E2C47C;
+
+    --clr-slate-fill: #556479;
+    --clr-slate-selected: #E2C47C;
+    --clr-slate-hover: #394A62;
+    --clr-slate-default: #556479;
+
+    --fs-h1: 4rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 2rem;
+    --fs-bt: 1.6rem;
+    --fs-d: 1.2rem;
+}
+
+/* Resetting styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: var(--ff);
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+}
+
+/* HTML font size and text alignment */
+html {
+    font-size: 62.5%; /* 1rem will now be 10 pixels (10/16 * 100%) */
+    text-align: left;
+}
+
+/* Heading styles */
+h1 {
+    font-family: 'Unna';
+    font-size: var(--fs-h1);
+    font-weight: 700;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    font-weight: 600;
+}
+
+/* Body text styles */
+.body-text {
+    font-size: var(--fs-bt);
+    font-weight: 400;
+    max-width: 314px;
+}
+
+/* Disclaimer text styles */
+.disclaimer-text {
+    font-size: var(--fs-d);
+    font-weight: 400;
+}
+
+/* Button states styles */
+.active {
+    opacity: 100%;
+    color: var(--clr-btn);
+}
+
+.inactive {
+    opacity: 60%;
+    color: var(--clr-btn);
+}
+
+/* Section and container styles */
+.section {
+    padding: 0 2rem;
+}
+
+.container {
+    border: 1px white solid;
+}
+
+/* Padding utility classes */
+.padding-top-20 {
+    padding-top: 2rem;
+}
+
+.padding-top-70 {
+    padding-top: 7rem;
+}
+
+/* Gap utility classes */
+.text-gap {
+    gap: 1.6rem;
+}
+
+.title-gap {
+    gap: 3.2rem;
+}
+
+/* Italic text style */
+.italic {
+    font-style: italic;
+}
