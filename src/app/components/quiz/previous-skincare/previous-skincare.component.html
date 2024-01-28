@@ -1,3 +1,6 @@
-<p>
-  previous-skincare works!
-</p>
+<div *ngIf="page8Answers">
+  <app-previous-skincare-answer *ngFor="let answer of page8Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-previous-skincare-answer>
+</div>
+
+<button (click)="onNextPage()">Next</button>
+<button (click)="onSkipPage()">Skip</button>

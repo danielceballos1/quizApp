@@ -1,3 +1,6 @@
-<p>
-  protecting-skin works!
-</p>
+<div *ngIf="page5Answers">
+  <img [src]="image" alt="">
+</div>
+
+<button (click)="onNextPage()">Next</button>
+<button (click)="onSkipPage()">Skip</button>

@@ -1,3 +1,6 @@
-<p>
-  body-care works!
-</p>
+<div *ngIf="page7Answers">
+  <app-body-care-answer *ngFor="let answer of page7Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-body-care-answer>
+</div>
+
+<button (click)="onNextPage()">Next</button>
+<button (click)="onSkipPage()">Skip</button>

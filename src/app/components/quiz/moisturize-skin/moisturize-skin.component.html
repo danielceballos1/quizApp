@@ -1,3 +1,6 @@
-<p>
-  moisturize-skin works!
-</p>
+<div *ngIf="page6Answers">
+  <app-moisturize-skin-answer *ngFor="let answer of page6Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-moisturize-skin-answer>
+</div>
+
+<button (click)="onNextPage()">Next</button>
+<button (click)="onSkipPage()">Skip</button>
