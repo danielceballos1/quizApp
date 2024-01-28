@@ -1,0 +1,6 @@
+.quiz{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    border: 1px green solid;
+}

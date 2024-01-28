@@ -1,4 +1,4 @@
 
-<div *ngIf="page1Answers">
-  <app-answer *ngFor="let answer of page1Answers | keyvalue" [answer]="answer.value" (answerClicked)="onNextPage($event)"></app-answer>
+<div  *ngIf="page1Answers">
+  <app-answer class="quiz" *ngFor="let answer of page1Answers | keyvalue" [answer]="answer.value" (answerClicked)="onNextPage($event)"></app-answer>
 </div>

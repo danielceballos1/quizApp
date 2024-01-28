@@ -1,0 +1,13 @@
+.header__logo-wrapper{
+    display: block;
+    margin: 0 auto;
+    height: 36px;
+    width: 85px;  
+}
+
+.header__logo-img{
+    height: 100%;
+    width: 100%;
+}
+
+
