@@ -1,24 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { QuizService } from '../../../services/quiz.service';
 import { CommonModule } from '@angular/common';
+import { ProblemAreasAnswerComponent } from './problem-areas-answer/problem-areas-answer.component';
 
 @Component({
   selector: 'app-problem-areas',
-  imports: [CommonModule],
+  imports: [CommonModule, ProblemAreasAnswerComponent],
   standalone: true,
   templateUrl: './problem-areas.component.html',
   styleUrls: ['./problem-areas.component.css']
 })
 export class ProblemAreasComponent implements OnInit {
 
-  page2Questions: any;
+  page2Answers: any;
   selectedQuestion: string | null = null;
 
   constructor(private quizService: QuizService) {}
-  ngOnInit() {
-    this.quizService.loadQuestions().subscribe((data) => {
-      this.page2Questions = data;
-      console.log('Page 2 Questions:', this.page2Questions);
+
+  ngOnInit(): void {
+    this.quizService.loadQuestions().subscribe((data: any) => {
+      this.page2Answers = data['page2'];
+      console.log('Page 2 Answers:', this.page2Answers);
     });
   }
 
