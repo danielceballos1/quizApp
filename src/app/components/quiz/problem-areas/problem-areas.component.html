@@ -1,5 +1,5 @@
 <div *ngIf="page2Answers">
-  <app-problem-areas-answer *ngFor="let answer of page2Answers | keyvalue" [answer]="answer.value" (answerClicked)="onQuestionClick($event)"></app-problem-areas-answer>
+  <app-problem-areas-answer *ngFor="let answer of page2Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-problem-areas-answer>
 </div>
 
 <button (click)="onNextPage()">Next</button>

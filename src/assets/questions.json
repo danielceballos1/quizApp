@@ -5,32 +5,32 @@
       "answer3": ["Get Firmer, Tighter, Younger Looking Skin","assets/images/intro-firmer.png"]
     },
     "page2": {
-      "question1": ["Loose skin on thighs and legs", "assets/images/pg-1-thighs.png"],
-      "question2": ["Thinning skin on arms", "assets/images/pg-1-thin-arms.png"],
-      "question3": ["Loose neck/jaw", "assets/images/pg-1-loose-neck.png"],
-      "question4": ["Saggy belly", "assets/images/pg-1-saggy-belly.png"]
+      "answer1": ["Loose skin on thighs and legs", "assets/images/pg-1-thighs.png"],
+      "answer2": ["Thinning skin on arms", "assets/images/pg-1-thin-arms.png"],
+      "answer3": ["Loose neck/jaw", "assets/images/pg-1-loose-neck.png"],
+      "answer4": ["Saggy belly", "assets/images/pg-1-saggy-belly.png"]
     },
     "page3": {
-      "question1": {
-        "title": "Niacinamide",
-        "description": "This is a form of vitamin B that supports protein and collagen to promote optimal skin health"
-      },
-      "question2": {
-        "title": "Lipid Compound",
-        "description": "This improves moisture retention in the skin’s barrier for long-lasting hydration"
-      },
-      "question3": {
-        "title": "Ribose",
-        "description": "This reduces the appearance of thinning, wrinkled skin"
-      },
-      "question4": {
-        "title": "Jojoba Leaf Extract",
-        "description": "This is rich in antioxidants and helps stimulate the production of collagen"
-      },
-      "question5": {
-        "title": "Glycerin",
-        "description": "This helps keep skin hydrated"
-      }
+      "answer1": [
+        "Niacinamide",
+        "This is a form of vitamin B that supports protein and collagen to promote optimal skin health"
+    ],
+      "answer2": [
+        "Lipid Compound",
+        "This improves moisture retention in the skin’s barrier for long-lasting hydration"
+      ],
+      "answer3": [
+        "Ribose",
+        "This reduces the appearance of thinning, wrinkled skin"
+      ],
+      "answer4": [
+        "Jojoba Leaf Extract",
+        "This is rich in antioxidants and helps stimulate the production of collagen"
+      ],
+      "answer5": [
+        "Glycerin",
+        "This helps keep skin hydrated"
+      ]
     }
   }
   

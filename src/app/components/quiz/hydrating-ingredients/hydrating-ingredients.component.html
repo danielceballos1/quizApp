@@ -1,3 +1,6 @@
-<p>
-  hydrating-ingredients works!
-</p>
+<div *ngIf="page3Answers">
+  <app-hydrating-ingredients-answers *ngFor="let answer of page3Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-hydrating-ingredients-answers>
+</div>
+
+<button (click)="onNextPage()">Next</button>
+<button (click)="onSkipPage()">Skip</button>

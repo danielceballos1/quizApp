@@ -13,7 +13,7 @@ import { ProblemAreasAnswerComponent } from './problem-areas-answer/problem-area
 export class ProblemAreasComponent implements OnInit {
 
   page2Answers: any;
-  selectedQuestion: string | null = null;
+  selectedAnswer: string | null = null;
 
   constructor(private quizService: QuizService) {}
 
@@ -24,13 +24,13 @@ export class ProblemAreasComponent implements OnInit {
     });
   }
 
-  onQuestionClick(question: string): void {
-    this.selectedQuestion = question;
-    console.log(this.selectedQuestion);
+  onAnswerClick(answer: string): void {
+    this.selectedAnswer = answer;
+    console.log(this.selectedAnswer);
   }
 
   onNextPage() {
-    if (this.selectedQuestion) {
+    if (this.selectedAnswer) {
       this.quizService.navigateToNextPage();
     } else {
       alert('Skip or select answer')
