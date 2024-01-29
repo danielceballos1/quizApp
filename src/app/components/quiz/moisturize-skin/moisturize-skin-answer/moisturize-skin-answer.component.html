@@ -1,6 +1,6 @@
-<div class="beauty-quiz-answer__wrapper" (click)="onClick()">
-  <p class="beauty-quiz-answer__text">{{ answer[0] }}</p>
-  <p class="beauty-quiz-answer__text">{{ answer[1] }}</p>
-  <p class="beauty-quiz-answer__text">{{ answer[2] }}</p>
- 
+<div class="d-flex justify-content-center padding-top-70" (click)="onClick()">
+  <div class="moisturize-beauty-quiz__wrapper beauty-quiz__answer-wrapper">
+    <h3> {{ answer?.[1] }}</h3>
+    <p class="moisturize-beauty-quiz__description">{{ answer?.[2] }}</p>
+   </div>
 </div>

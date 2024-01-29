@@ -1,0 +1,22 @@
+.moisturize-beauty-quiz__slider-bar{
+    padding-top: 4.8rem;
+    gap: 3px;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.moisturize-beauty-quiz{
+    text-align: left;
+    max-width: 515px;
+    margin: 0 auto;
+}
+.rectangle{
+height: 7px;
+width: 50px;
+background-color: var(--clr-gray);
+}
+
+.moisturize-beauty-quiz__sub-title{
+    font-size: var(--fs-bt);
+}

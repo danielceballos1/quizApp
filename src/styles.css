@@ -205,7 +205,6 @@ padding-top: 1.6rem;
     display: flex;
     flex-direction: column;
     text-transform: capitalize;
-    border: 2px purple solid;
 }
 
 
@@ -226,7 +225,6 @@ padding-top: 1.6rem;
 
 
 .beauty-quiz__answer-wrapper{
-    border: 2px red solid;
     position:relative;
     height: var(--answer-height);
     max-width: var(--max-width);

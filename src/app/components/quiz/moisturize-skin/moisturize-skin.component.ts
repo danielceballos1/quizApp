@@ -12,9 +12,11 @@ import { QuizService } from '../../../services/quiz.service';
 })
 export class MoisturizeSkinComponent implements OnInit {
 
-  page6Answers: any;
+  // page6Answers: any;
+  arrow = "assets/images/arrow.png"
+  page6Answers: { [key: string]: any } = {};
   selectedAnswer: string | null = null;
-
+  selectedRectangleIndex: number | null = 1;
   constructor(private quizService: QuizService) {}
 
   ngOnInit(): void {
@@ -24,22 +26,38 @@ export class MoisturizeSkinComponent implements OnInit {
     });
   }
 
+  onRectangleClick(index: number): void {
+    if (!isNaN(index)) {
+      this.selectedRectangleIndex = index;
+      console.log('Selected Rectangle Index:', this.selectedRectangleIndex);
+  
+      // Fetch and set the corresponding data for the selected rectangle
+      if (this.selectedRectangleIndex !== null) {
+        const selectedAnswerKey : any = 'answer' + this.selectedRectangleIndex;
+        this.selectedAnswer = this.page6Answers[selectedAnswerKey as keyof typeof this.page6Answers];
+      }
+    } else {
+      console.error('Invalid rectangle index:', index);
+    }
+  }
+
   onAnswerClick(answer: string): void {
     this.selectedAnswer = answer;
     console.log(this.selectedAnswer);
   }
 
   onNextPage() {
-    if (this.selectedAnswer) {
+    
       this.quizService.navigateToNextPage();
-    } else {
-      alert('Skip or select answer')
-    }
+   
   }
 
-  onSkipPage() {
+  onPreviousPage() {
     this.quizService.navigateToPreviousPage();
   }
 
+  onSkipPage() {
+  this.quizService.navigateToNextPage();
+  }
 }
   

@@ -14,6 +14,7 @@ export class ProtectingSkinComponent implements OnInit {
   page5Answers: any;
   image = "assets/images/woman-crepe-halfway-there.gif"
   selectedAnswer: string | null = null;
+  arrow = "assets/images/arrow.png"
 
   constructor(private quizService: QuizService) {}
 

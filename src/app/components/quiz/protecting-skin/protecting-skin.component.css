@@ -1,0 +1,34 @@
+
+.protecting-skin__description{
+   
+}
+
+.protecting-skin__img{
+    max-height: 408px;
+    height: 100%;
+    width: 100%;
+}
+
+.protecting-skin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px pink solid;
+    gap: 4.3rem;
+}
+.protecting-skin__content-block{
+    max-width: 420px;
+}
+.protecting-skin__description__wrapper{
+display: flex;
+flex-direction: column;
+font-size: var(--fs-bt);
+}
+
+@media (min-width: 1000px) {
+    .protecting-skin{
+       flex-direction: row;
+    }
+    
+}

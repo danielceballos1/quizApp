@@ -44,16 +44,17 @@ export class DescribeSkinComponent implements OnInit {
   }
 
   onNextPage() {
-    if (this.selectedAnswer) {
+   
       this.quizService.navigateToNextPage();
-    } else {
-      alert('Skip or select answer')
-    }
+   
   }
 
-  onSkipPage() {
+  onPreviousPage() {
     this.quizService.navigateToPreviousPage();
   }
 
+  onSkipPage() {
+    this.quizService.navigateToNextPage();
+  }
 }
   

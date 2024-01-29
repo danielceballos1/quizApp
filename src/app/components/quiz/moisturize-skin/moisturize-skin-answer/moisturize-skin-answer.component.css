@@ -1,0 +1,12 @@
+.moisturize-beauty-quiz__wrapper{
+display: flex;
+text-align: left;
+flex-direction: column;
+justify-content: center;
+padding-left: 3.3rem;
+} 
+
+.moisturize-beauty-quiz__description{
+font-size: var(--fs-bt);
+text-align: left;
+}

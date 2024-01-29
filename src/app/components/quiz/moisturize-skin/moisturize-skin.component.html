@@ -1,6 +1,56 @@
-<div *ngIf="page6Answers">
-  <app-moisturize-skin-answer *ngFor="let answer of page6Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-moisturize-skin-answer>
-</div>
+<!-- <div class="section">
+  <div class="container text-center">
+    <h2>How often do you misturize your skin?</h2>
+    <p>Choose your current level to align with your routine</p>
+
+    <div class="moisturize__slider-bar d-flex">
+     
+      <div class="rectangle" (click)="onRectangleClick(1)"></div>
+      <div class="rectangle" (click)="onRectangleClick(2)"></div>
+      <div class="rectangle" (click)="onRectangleClick(3)"></div>
+      <div class="rectangle" (click)="onRectangleClick(4)"></div>
+      <div class="rectangle" (click)="onRectangleClick(5)"></div>
+      <div class="rectangle" (click)="onRectangleClick(6)"></div>
+      <div class="rectangle" (click)="onRectangleClick(7)"></div>
+      <div class="rectangle" (click)="onRectangleClick(8)"></div>
+      <div class="rectangle" (click)="onRectangleClick(9)"></div>
+      <div class="rectangle" (click)="onRectangleClick(10)"></div> 
+  </div>
+  
+    <div *ngIf="page6Answers">
+      <ng-container *ngIf="page6Answers | keyvalue as answersArray">
+        <app-moisturize-skin-answer [answer]="page6Answers['answer2']" (answerClicked)="onAnswerClick($event)"></app-moisturize-skin-answer>
+      </ng-container>
+    </div>
 
 <button (click)="onNextPage()">Next</button>
-<button (click)="onSkipPage()">Skip</button>
+<button (click)="onSkipPage()">Skip</button> -->
+
+
+
+<div class="section">
+  <div class="container">
+    <div class="moisturize-beauty-quiz">
+      <div class="moisturize-beauty-quiz__title">
+        <h2>How often do you moisturize your skin?</h2>
+        <p class="moisturize-beauty-quiz__sub-title">Choose your current level to align with your routine</p>
+      </div>
+    
+      <div class="moisturize-beauty-quiz__slider-bar d-flex">
+        <div class="rectangle" *ngFor="let index of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" (click)="onRectangleClick(index)"></div>
+      </div>
+    
+      <div *ngIf="page6Answers">
+        <ng-container *ngIf="page6Answers | keyvalue as answersArray">
+          <app-moisturize-skin-answer [answer]="page6Answers['answer' + selectedRectangleIndex]" (answerClicked)="onAnswerClick($event)"></app-moisturize-skin-answer>
+        </ng-container>
+      </div>
+  
+      <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+        <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+        <button class="quiz__btn-skip" (click)="onSkipPage()">Skip</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
