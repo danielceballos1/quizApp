@@ -1,4 +1,11 @@
-<div class="beauty-quiz-answer__wrapper" (click)="onClick()">
-  <p class="beauty-quiz-answer__text">{{ answer[0] }}</p>
-  <p class="beauty-quiz-answer__text">{{ answer[1] }}</p>
+<div class="hydrating-ingredients-quiz-answer__wrapper" (click)="onClick()">
+  <div class="d-flex gap">
+    <div class="square-container">
+      <div class="square"></div>
+    </div>
+    <div class="d-flex flex-column">
+      <p class="hydrating-ingredients-quiz-answer__text">{{ answer[0] }}</p>
+      <p class="hydrating-ingredients-quiz-answer__basic-text">{{ answer[1] }}</p>
+    </div>
+  </div>
 </div>

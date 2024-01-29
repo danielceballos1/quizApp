@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./hydrating-ingredients.component.css']
 })
 export class HydratingIngredientsComponent implements OnInit {
-
+  arrow = "assets/images/arrow.png"
   page3Answers: any;
   selectedAnswer: string | null = null;
 

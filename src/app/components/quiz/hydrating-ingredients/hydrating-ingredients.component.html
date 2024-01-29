@@ -1,6 +1,19 @@
-<div *ngIf="page3Answers">
-  <app-hydrating-ingredients-answers *ngFor="let answer of page3Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-hydrating-ingredients-answers>
+
+<div class="section">
+  <div class="container">
+    <div class="beauty-quiz">
+      <h2 class="title-gap">What hydrating ingredients are you interested in?</h2>
+        <div class="beauty-quiz__align-center text-gap" *ngIf="page3Answers">
+          <app-hydrating-ingredients-answers *ngFor="let answer of page3Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-hydrating-ingredients-answers>
+        </div>
+        <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+          <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+          <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+        </div>
+    </div>
+  </div>
 </div>
 
-<button (click)="onNextPage()">Next</button>
-<button (click)="onSkipPage()">Skip</button>
+
+
+

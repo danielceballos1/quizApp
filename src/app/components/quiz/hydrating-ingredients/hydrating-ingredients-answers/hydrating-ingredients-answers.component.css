@@ -1,0 +1,36 @@
+.hydrating-ingredients-quiz-answer__wrapper {
+      height: var(--answer-height);
+      max-width: var(--max-width);
+      width: 100%;
+      background-color: var(--clr-slate-default);
+      display: flex;
+      padding-left: 16px;
+      padding-right: 16px;
+      align-items: center;
+     
+    }
+    
+    .square__container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 33px;
+    
+    }
+
+    .square {
+        margin-top: 5px;
+      width: 30px;
+      height: 30px;
+      border: 2px solid var(--clr-white); 
+      box-sizing: border-box;
+  }
+  
+   
+.hydrating-ingredients-quiz-answer__text{
+    font-size: var(--fs-answer-text);
+}
+   
+.hydrating-ingredients-quiz-answer__basic-text{
+    font-size: var(--fs-bt);
+}

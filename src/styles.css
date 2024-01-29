@@ -166,6 +166,11 @@ padding-top: 1.6rem;
 }
 
 /* Gap utility classes */
+
+.gap{
+    gap: 1.6rem;
+}
+
 .text-gap {
     gap: 1.6rem;
 }
