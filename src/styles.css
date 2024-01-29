@@ -111,6 +111,23 @@ h3 {
     gap: 1.6rem;
 }
 
+.quiz__btn-none-of-above{
+    max-width: var(--max-width);
+    width: 100%;
+    height: var(--btn-height);
+    background-color: var(--clr-slate-default);
+    color: var(--clr-white);
+    font-size: var(--fs-btn-text);
+    font-weight: 600; 
+    border: 1px var(--clr-slate-default) solid;
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-between; */
+    padding-left: 3.7rem;
+    padding-right: 3.7rem;
+    align-items: center;
+}
+
 .quiz__btn-continue{
     max-width: var(--max-width);
     width: 100%;
@@ -241,8 +258,9 @@ padding-top: 1.6rem;
     max-width: var(--max-width);
     width: 100%;
 }
-/* arrow */
-.arrow{
+/* arrow and x png */
+.arrow,
+.x{
     height: 24px;
     width: 24px;
 }

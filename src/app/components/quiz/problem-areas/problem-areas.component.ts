@@ -39,6 +39,10 @@ export class ProblemAreasComponent implements OnInit {
   }
 
   onSkipPage() {
+    this.quizService.navigateToNextPage();
+  }
+
+  onPreviousPage(){
     this.quizService.navigateToPreviousPage();
   }
 

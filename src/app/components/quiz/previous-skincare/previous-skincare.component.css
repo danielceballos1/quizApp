@@ -1,0 +1,17 @@
+.beauty-quiz--title{
+    text-transform: none;
+}
+
+.submited-text__description{
+    font-size: var(--fs-bt);
+}
+
+.submited-text{
+    margin: 21px;
+    padding: 1.6rem;
+    border: 2px solid var(--clr-white);
+}
+
+.submited-text__title{
+    text-transform: none;
+}

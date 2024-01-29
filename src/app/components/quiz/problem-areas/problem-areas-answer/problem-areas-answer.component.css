@@ -1,7 +1,5 @@
  .problem-area__beauty-quiz-answer-wrapper {
   position: relative;
-
-
     height: 133px;
     max-width: 517px;
     width: 100%;
@@ -11,8 +9,6 @@
   }
   
   .square__container{
-
-    /* flex: .8; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,11 +23,8 @@
 }
 
   .problem-area__beauty-quiz-answer-text {
-
     position: absolute;
     left: 8.3rem;
-
-    /* flex: 1.2; */
     max-width: 10.5rem;
     height: 100%;
     display: flex;
@@ -40,8 +33,6 @@
   }
   
   .problem-area__beauty-quiz-answer-img {
-    /* flex: 1.2; */
-    /* object-fit: cover; */
     margin-left: auto;
     height: 100%;
   }

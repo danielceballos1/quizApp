@@ -11,8 +11,9 @@ import { QuizService } from '../../../services/quiz.service';
   styleUrls: ['./previous-skincare.component.css']
 })
 export class PreviousSkincareComponent implements OnInit {
-
- 
+  isSubmitClicked: boolean = false;
+  arrow = "assets/images/arrow.png"
+  x = "assets/images/❌.png"
   page8Answers: any;
   selectedAnswer: string | null = null;
 
@@ -32,13 +33,22 @@ export class PreviousSkincareComponent implements OnInit {
 
   onNextPage() {
     if (this.selectedAnswer) {
-      this.quizService.navigateToNextPage();
+      this.isSubmitClicked = true;
     } else {
       alert('Skip or select answer')
     }
   }
 
   onSkipPage() {
+    // this.quizService.navigateToNextPage();
+    if (this.selectedAnswer) {
+      this.isSubmitClicked = true;
+    } else {
+      alert('Last page, select answer')
+    }
+  }
+
+  onPreviousPage(){
     this.quizService.navigateToPreviousPage();
   }
 

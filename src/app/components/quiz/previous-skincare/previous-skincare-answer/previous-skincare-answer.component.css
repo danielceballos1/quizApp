@@ -1,0 +1,54 @@
+.previous-skincare-quiz-answer__wrapper {
+    position: relative;
+      height: 133px;
+      max-width: 517px;
+      width: 100%;
+      background-color: var(--clr-slate-default);
+      display: flex;
+     
+    }
+    
+    .square__container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 18px;
+    }
+  
+    .square {
+      width: 30px;
+      height: 30px;
+      border: 2px solid var(--clr-white); 
+      box-sizing: border-box;
+  }
+  
+    .previous-skincare-quiz-answer__text {
+      position: absolute;
+      left: 6.4rem;
+      max-width: 40rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: var(--fs-answer-text); 
+    }
+    
+    .previous-skincare-quiz-answer__img {
+      margin-left: auto;
+      height: 100%;
+    }
+  
+    /* Media query for larger screens */
+  
+     /* @media (min-width: 400px) {
+      .problem-area__beauty-quiz-answer-text {
+        max-width: 40rem;
+      }
+    }
+    
+  
+    @media (min-width: 500px) {
+      .problem-area__beauty-quiz-answer-text {
+        max-width: 50rem;
+      }
+    }  */
+    
