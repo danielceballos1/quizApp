@@ -14,6 +14,7 @@ export class ProblemAreasComponent implements OnInit {
 
   page2Answers: any;
   selectedAnswer: string | null = null;
+  arrow = "assets/images/arrow.png"
 
   constructor(private quizService: QuizService) {}
 

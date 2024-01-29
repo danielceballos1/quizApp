@@ -23,9 +23,16 @@
     --fs-h2: 2.5rem;
     --fs-h3: 2rem;
     --fs-answer-text: 2rem;
+    --fs-btn-text: 2rem;
     --fs-bt: 1.6rem;
     --fs-d: 1.2rem;
+
+    --max-width: 515px;
+    --answer-height: 133px;
+    --btn-height: 83px;
+
 }
+
 
 /* Resetting styles for all elements */
 * {
@@ -39,6 +46,7 @@ body {
     font-family: var(--ff);
     background-color: var(--clr-blue);
     color: var(--clr-white);
+    min-height: 1080px;
 }
 
 /* HTML font size and text alignment */
@@ -92,12 +100,44 @@ h3 {
     color: var(--clr-btn);
 }
 
-.quiz__btn-continue{
+.quiz__btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.btn__gap{
+    gap: 1.6rem;
+}
+
+.quiz__btn-continue{
+    max-width: var(--max-width);
+    width: 100%;
+    height: var(--btn-height);
+    background-color: var(--clr-gold);
+    font-size: var(--fs-btn-text);
+    font-weight: 600; 
+    border: 1px var(--clr-gold) solid;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3.7rem;
+    padding-right: 3.7rem;
+    align-items: center;
 }
 
 .quiz__btn-skip{
-
+    max-width: var(--max-width);
+    width: 100%;
+    height: var(--btn-height);
+    border: 1px var(--clr-white) solid;
+    color: var(--clr-white);
+    background-color: transparent;
+    font-size: var(--fs-btn-text);
+    font-weight: 600; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Section and container styles */
@@ -110,7 +150,13 @@ h3 {
     padding: 0;
 }
 
+
 /* Padding utility classes */
+
+.padding-top-gap{
+padding-top: 1.6rem;
+}
+
 .padding-top-20 {
     padding-top: 2rem;
 }
@@ -128,10 +174,6 @@ h3 {
     padding-bottom: 3.2rem;
 }
 
-/*  */
-.title{
-    text-align: center;
-}
 
 /* Italic text style */
 .italic {
@@ -141,7 +183,7 @@ h3 {
 
 /* beauty quiz answer style */
 .beauty-quiz{
-    max-width: 515px;
+    max-width: var(--max-width);
     margin: 0 auto;
     text-align: left;
  }
@@ -173,8 +215,8 @@ h3 {
 .beauty-quiz__answer-wrapper{
     border: 2px red solid;
     position:relative;
-    height: 133px;
-    max-width: 517px;
+    height: var(--answer-height);
+    max-width: var(--max-width);
     width: 100%;
     background-color:  var( --clr-slate-default);
     display: flex;
@@ -185,8 +227,13 @@ h3 {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 517px;
+    max-width: var(--max-width);
     width: 100%;
+}
+/* arrow */
+.arrow{
+    height: 24px;
+    width: 24px;
 }
 
 /* media query */
