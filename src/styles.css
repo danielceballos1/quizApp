@@ -92,6 +92,14 @@ h3 {
     color: var(--clr-btn);
 }
 
+.quiz__btn-continue{
+
+}
+
+.quiz__btn-skip{
+
+}
+
 /* Section and container styles */
 .section {
     padding: 0 2rem;
@@ -99,6 +107,7 @@ h3 {
 
 .container {
     border: 1px white solid;
+    padding: 0;
 }
 
 /* Padding utility classes */
@@ -119,6 +128,11 @@ h3 {
     padding-bottom: 3.2rem;
 }
 
+/*  */
+.title{
+    text-align: center;
+}
+
 /* Italic text style */
 .italic {
     font-style: italic;
@@ -126,6 +140,20 @@ h3 {
 
 
 /* beauty quiz answer style */
+.beauty-quiz{
+    max-width: 515px;
+    margin: 0 auto;
+    text-align: left;
+ }
+
+ .beauty-quiz__container{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    border: 2px purple solid;
+}
+
+
 .beauty-quiz__answer-text{
     position: absolute;
     left: 3.3rem;
@@ -143,6 +171,7 @@ h3 {
 
 
 .beauty-quiz__answer-wrapper{
+    border: 2px red solid;
     position:relative;
     height: 133px;
     max-width: 517px;
@@ -152,6 +181,13 @@ h3 {
     justify-content:end;
 } 
 
+.beauty-quiz__align-center{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 517px;
+    width: 100%;
+}
 
 /* media query */
 

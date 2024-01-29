@@ -1,6 +1,11 @@
-<div *ngIf="page2Answers">
-  <app-problem-areas-answer *ngFor="let answer of page2Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-problem-areas-answer>
+<div class="section">
+  <div class="container">
+    <h2 class="title title-gap">Select problem areas</h2>
+    <div class="beauty-quiz__align-center text-gap" *ngIf="page2Answers">
+      <app-problem-areas-answer *ngFor="let answer of page2Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-problem-areas-answer>
+    </div>
+  </div>
 </div>
 
-<button (click)="onNextPage()">Next</button>
-<button (click)="onSkipPage()">Skip</button>
+<button class="quiz__btn-continue" (click)="onNextPage()">Next</button>
+<button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>

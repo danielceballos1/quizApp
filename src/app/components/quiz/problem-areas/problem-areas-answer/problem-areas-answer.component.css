@@ -1,0 +1,63 @@
+ .problem-area__beauty-quiz-answer-wrapper {
+  position: relative;
+
+
+    height: 133px;
+    max-width: 517px;
+    width: 100%;
+    background-color: var(--clr-slate-default);
+    display: flex;
+   
+  }
+  
+  .square__container{
+
+    /* flex: .8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33px;
+  }
+
+  .square {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--clr-white); 
+    box-sizing: border-box;
+}
+
+  .problem-area__beauty-quiz-answer-text {
+
+    position: absolute;
+    left: 8.3rem;
+
+    /* flex: 1.2; */
+    max-width: 10.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-answer-text); 
+  }
+  
+  .problem-area__beauty-quiz-answer-img {
+    /* flex: 1.2; */
+    /* object-fit: cover; */
+    margin-left: auto;
+    height: 100%;
+  }
+
+  /* Media query for larger screens */
+
+  @media (min-width: 400px) {
+    .problem-area__beauty-quiz-answer-text {
+      max-width: 20rem;
+    }
+  }
+  
+
+  @media (min-width: 500px) {
+    .problem-area__beauty-quiz-answer-text {
+      max-width: 30rem;
+    }
+  }
+  
