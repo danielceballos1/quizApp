@@ -1,23 +1,22 @@
 <div class="section">
   <div class="container">
     <div class="beauty-quiz">
-
-      <!-- <app-describe-skin-answer *ngFor="let answer of page4Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)">
-      
-      </app-describe-skin-answer> -->
       <div *ngIf="page4Answers">
-
-     
-   
         <div *ngIf="selectedRectangleIndex === 1">
           <div class="d-flex describe-skin-beauty-quiz-answer__gap">
-            <img
+            <div class="row">
+              <h2 class="text-center">How would you describe your skin?</h2>
+              <div class="col-lg-6 describe-skin-beauty-quiz-answer__img-wrapper">
+              <img
               class="describe-skin-beauty-quiz-answer__img"
               [src]="page4Answers?.answer1[1]"
               alt=""
             />
+              </div>
+           
+              <div class="col-lg-6"> 
             <div class="describe-skin-beauty-quiz-answer__content-box">
-              <h2>How would you describe your skin?</h2>
+             
               <div class="slider-bar d-flex">
                 <div class="clickable-area" (click)="onLeftClick(1)"></div>
                 <div class="rectangle"></div>
@@ -52,51 +51,60 @@
                 </button>
               </div>
             </div>
+            </div>
+          </div>
           </div>
         </div>
 
-        <!-- secon -->
+        <!-- second -->
         <div *ngIf="selectedRectangleIndex === 2">
           <div class="d-flex describe-skin-beauty-quiz-answer__gap">
-            <img
+            <div class="row">
+              <h2 class="text-center">How would you describe your skin?</h2>
+              <div class="col-lg-6 describe-skin-beauty-quiz-answer__img-wrapper">
+              <img
               class="describe-skin-beauty-quiz-answer__img"
               [src]="page4Answers?.answer2[1]"
               alt=""
             />
-            <div class="describe-skin-beauty-quiz-answer__content-box">
-              <h2>How would you describe your skin?</h2>
-              <div class="slider-bar d-flex">
-                <div class="clickable-area" (click)="onLeftClick(1)"></div>
-                <div class="rectangle"></div>
-                <div class="clickable-area" (click)="onRightClick(2)"></div>
-                <div class="rectangle"></div>
-                <div class="clickable-area" (click)="onRightClick(3)"></div>
-                <div class="rectangle"></div>
-                <div class="clickable-area" (click)="onRightClick(4)"></div>
-                <div class="rectangle"></div>
-                <div class="clickable-area" (click)="onRightClick(5)"></div>
-                <div class="rectangle"></div>
-                <div class="clickable-area" (click)="onRightClick(6)"></div>
-                <div
-                  class="describe-skin-beauty-quiz-answer__text-container--dry-skin"
-                >
-                  <p class="describe-skin-beauty-quiz-answer__text">
-                    {{ page4Answers.answer2[0] }}
-                  </p>
-                  <div class="triangle-down"></div>
-                  <div class="oval"></div>
-                </div>
               </div>
-              <div class="quiz__btn-wrapper btn__gap padding-top-gap">
-                <button class="quiz__btn-continue" (click)="onNextPage()">
-                  Continue
-                  <span
-                    ><img class="arrow" [src]="arrow" alt="Continue button"
-                  /></span>
-                </button>
-                <button class="quiz__btn-skip" (click)="onSkipPage()">
-                  Skip
-                </button>
+              <div class="col-lg-6">
+                <div class="describe-skin-beauty-quiz-answer__content-box">
+                
+                  <div class="slider-bar d-flex">
+                    <div class="clickable-area" (click)="onLeftClick(1)"></div>
+                    <div class="rectangle"></div>
+                    <div class="clickable-area" (click)="onRightClick(2)"></div>
+                    <div class="rectangle"></div>
+                    <div class="clickable-area" (click)="onRightClick(3)"></div>
+                    <div class="rectangle"></div>
+                    <div class="clickable-area" (click)="onRightClick(4)"></div>
+                    <div class="rectangle"></div>
+                    <div class="clickable-area" (click)="onRightClick(5)"></div>
+                    <div class="rectangle"></div>
+                    <div class="clickable-area" (click)="onRightClick(6)"></div>
+                    <div
+                      class="describe-skin-beauty-quiz-answer__text-container--dry-skin"
+                    >
+                      <p class="describe-skin-beauty-quiz-answer__text">
+                        {{ page4Answers.answer2[0] }}
+                      </p>
+                      <div class="triangle-down"></div>
+                      <div class="oval"></div>
+                    </div>
+                  </div>
+                  <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+                    <button class="quiz__btn-continue" (click)="onNextPage()">
+                      Continue
+                      <span
+                        ><img class="arrow" [src]="arrow" alt="Continue button"
+                      /></span>
+                    </button>
+                    <button class="quiz__btn-skip" (click)="onSkipPage()">
+                      Skip
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -105,13 +113,18 @@
         <!-- third -->
         <div *ngIf="selectedRectangleIndex === 3">
           <div class="d-flex describe-skin-beauty-quiz-answer__gap">
-            <img
+            <div class="row">  
+              <h2 class="text-center">How would you describe your skin?</h2>
+              <div class="col-lg-6 describe-skin-beauty-quiz-answer__img-wrapper">
+              <img
               class="describe-skin-beauty-quiz-answer__img"
               [src]="page4Answers?.answer3[1]"
               alt=""
             />
+            </div>
+           <div class="col-lg-6">
             <div class="describe-skin-beauty-quiz-answer__content-box">
-              <h2>How would you describe your skin?</h2>
+          
               <div class="slider-bar d-flex">
                 <div class="clickable-area" (click)="onLeftClick(1)"></div>
                 <div class="rectangle"></div>
@@ -146,19 +159,26 @@
                 </button>
               </div>
             </div>
+           </div>
+          </div>
           </div>
         </div>
 
         <!-- fourth -->
         <div *ngIf="selectedRectangleIndex === 4">
           <div class="d-flex describe-skin-beauty-quiz-answer__gap">
+            <div class="row">
+              <h2 class="text-center">How would you describe your skin?</h2>
+              <div class="col-lg-6 describe-skin-beauty-quiz-answer__img-wrapper">
             <img
               class="describe-skin-beauty-quiz-answer__img"
               [src]="page4Answers?.answer4[1]"
               alt=""
             />
+          </div>
+          <div class="col-lg-6">
             <div class="describe-skin-beauty-quiz-answer__content-box">
-              <h2>How would you describe your skin?</h2>
+            
               <div class="slider-bar d-flex">
                 <div class="clickable-area" (click)="onLeftClick(1)"></div>
                 <div class="rectangle"></div>
@@ -194,18 +214,28 @@
               </div>
             </div>
           </div>
+          </div>
+          </div>
         </div>
 
         <!-- fith -->
         <div *ngIf="selectedRectangleIndex === 5">
           <div class="d-flex describe-skin-beauty-quiz-answer__gap">
-            <img
-              class="describe-skin-beauty-quiz-answer__img"
-              [src]="page4Answers?.answer5[1]"
-              alt=""
-            />
+            <div class="row">
+              <h2 class="text-center">How would you describe your skin?</h2>
+              <div class="col-lg-6 describe-skin-beauty-quiz-answer__img-wrapper">
+                <img
+                class="describe-skin-beauty-quiz-answer__img"
+                [src]="page4Answers?.answer5[1]"
+                alt=""
+              />
+              </div>
+           
+           <div class="col-lg-6">
+
+          
             <div class="describe-skin-beauty-quiz-answer__content-box">
-              <h2>How would you describe your skin?</h2>
+            
               <div class="slider-bar d-flex">
                 <div class="clickable-area" (click)="onLeftClick(1)"></div>
                 <div class="rectangle"></div>
@@ -240,19 +270,26 @@
                 </button>
               </div>
             </div>
+            </div>
+          </div>
           </div>
         </div>
 
         <!-- six -->
         <div *ngIf="selectedRectangleIndex === 6">
           <div class="d-flex describe-skin-beauty-quiz-answer__gap">
+            <div class="row">
+              <h2 class="text-center">How would you describe your skin?</h2>
+              <div class="col-lg-6 describe-skin-beauty-quiz-answer__img-wrapper">
             <img
-              class="describe-skin-beauty-quiz-answer__img"
-              [src]="page4Answers?.answer6[1]"
-              alt=""
-            />
+            class="describe-skin-beauty-quiz-answer__img"
+            [src]="page4Answers?.answer6[1]"
+            alt=""
+          />
+           </div>
+            <div class="col-lg-6">
             <div class="describe-skin-beauty-quiz-answer__content-box">
-              <h2>How would you describe your skin?</h2>
+             
               <div class="slider-bar d-flex">
                 <div class="clickable-area" (click)="onLeftClick(1)"></div>
                 <div class="rectangle"></div>
@@ -287,6 +324,8 @@
                 </button>
               </div>
             </div>
+          </div>
+          </div>
           </div>
         </div>
         

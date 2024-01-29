@@ -189,6 +189,10 @@ padding-top: 1.6rem;
     font-style: italic;
 }
 
+/* text-align */
+.text-center{
+    text-align: center;
+}
 
 /* beauty quiz answer style */
 .beauty-quiz{
