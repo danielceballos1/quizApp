@@ -1,6 +1,11 @@
 <div class=" section">
   <div class="container">
-    <div class="protecting-skin padding-top-70">
+
+    <div class="protecting-skin-progress">
+      <app-progression-bar [currentQuizPage]="currentQuizPage"></app-progression-bar>
+    </div>
+    
+      <div class="protecting-skin padding-top-70">
       <div *ngIf="page5Answers">
           <img class="protecting-skin__img" [src]="image" alt="">
       </div>

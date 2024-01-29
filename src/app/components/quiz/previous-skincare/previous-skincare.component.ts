@@ -2,15 +2,18 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { PreviousSkincareAnswerComponent } from './previous-skincare-answer/previous-skincare-answer.component';
 import { QuizService } from '../../../services/quiz.service';
+import { ProgressionBarComponent } from '../../progression-bar/progression-bar.component';
 
 @Component({
   standalone: true,
   selector: 'app-previous-skincare',
-  imports: [CommonModule, PreviousSkincareAnswerComponent],
+  imports: [CommonModule, PreviousSkincareAnswerComponent, ProgressionBarComponent],
   templateUrl: './previous-skincare.component.html',
   styleUrls: ['./previous-skincare.component.css']
 })
 export class PreviousSkincareComponent implements OnInit {
+
+  currentQuizPage : number = 7;
   isSubmitClicked: boolean = false;
   arrow = "assets/images/arrow.png"
   x = "assets/images/❌.png"

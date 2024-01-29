@@ -2,16 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { QuizService } from '../../../services/quiz.service';
 import { DescribeSkinAnswerComponent } from './describe-skin-answer/describe-skin-answer.component';
 import { CommonModule } from '@angular/common';
+import { ProgressionBarComponent } from '../../progression-bar/progression-bar.component';
 
 @Component({
   selector: 'app-describe-skin',
   standalone: true,
-  imports: [DescribeSkinAnswerComponent, CommonModule],
+  imports: [DescribeSkinAnswerComponent, CommonModule, ProgressionBarComponent],
   templateUrl: './describe-skin.component.html',
   styleUrls: ['./describe-skin.component.css']
 })
 export class DescribeSkinComponent implements OnInit {
-
+  currentQuizPage: number = 3;
   page4Answers: any;
   selectedAnswer: string | null = null;
   arrow = "assets/images/arrow.png"

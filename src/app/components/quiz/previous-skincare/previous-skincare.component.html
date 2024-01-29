@@ -3,9 +3,8 @@
 <div class="previous-skincare section">
   <div class="container">
     <div class="beauty-quiz">
+      <app-progression-bar [currentQuizPage]="currentQuizPage"></app-progression-bar>
       <h2 class="title-gap beauty-quiz--title">Have you experienced any of these issues in your previous skincare attempts? </h2>
-      
-
       <div class="beauty-quiz__align-center text-gap" *ngIf="page8Answers">
         <app-previous-skincare-answer *ngFor="let answer of page8Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-previous-skincare-answer>
       </div>

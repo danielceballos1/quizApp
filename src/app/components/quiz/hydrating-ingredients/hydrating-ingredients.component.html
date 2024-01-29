@@ -2,6 +2,7 @@
 <div class="hydrating-ingredients section">
   <div class="container">
     <div class="beauty-quiz">
+      <app-progression-bar [currentQuizPage]="currentQuizPage"></app-progression-bar>
       <h2 class="title-gap">What hydrating ingredients are you interested in?</h2>
         <div class="beauty-quiz__align-center text-gap" *ngIf="page3Answers">
           <app-hydrating-ingredients-answers *ngFor="let answer of page3Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-hydrating-ingredients-answers>

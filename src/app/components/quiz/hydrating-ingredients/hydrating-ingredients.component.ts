@@ -2,15 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { QuizService } from '../../../services/quiz.service';
 import { HydratingIngredientsAnswersComponent } from './hydrating-ingredients-answers/hydrating-ingredients-answers.component';
 import { CommonModule } from '@angular/common';
+import { ProgressionBarComponent } from '../../progression-bar/progression-bar.component';
 
 @Component({
   selector: 'app-hydrating-ingredients',
   standalone: true,
-  imports: [HydratingIngredientsAnswersComponent, CommonModule],
+  imports: [HydratingIngredientsAnswersComponent, CommonModule, ProgressionBarComponent],
   templateUrl: './hydrating-ingredients.component.html',
   styleUrls: ['./hydrating-ingredients.component.css']
 })
 export class HydratingIngredientsComponent implements OnInit {
+  currentQuizPage : number = 2;
   arrow = "assets/images/arrow.png"
   page3Answers: any;
   selectedAnswer: string | null = null;

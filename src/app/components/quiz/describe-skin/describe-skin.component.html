@@ -1,6 +1,7 @@
 <div class="describe-skin section">
   <div class="container">
     <div class="beauty-quiz">
+      <app-progression-bar [currentQuizPage]="currentQuizPage"></app-progression-bar>
       <div *ngIf="page4Answers">
         <div *ngIf="selectedRectangleIndex === 1">
           <div class="d-flex describe-skin-beauty-quiz-answer__gap">

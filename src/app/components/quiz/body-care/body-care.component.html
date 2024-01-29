@@ -1,6 +1,7 @@
 <div class="body-care section">
   <div class="container">
     <div class="beauty-quiz">
+      <app-progression-bar [currentQuizPage]="currentQuizPage"></app-progression-bar>
       <h2 class="title-gap body-care-quiz-answer__title">How much time do you spend on body care daily:</h2>
       <div class="beauty-quiz__align-center gap" *ngIf="page7Answers">
         <app-body-care-answer *ngFor="let answer of page7Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-body-care-answer>

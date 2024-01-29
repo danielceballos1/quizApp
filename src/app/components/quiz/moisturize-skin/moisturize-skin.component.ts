@@ -2,17 +2,18 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MoisturizeSkinAnswerComponent } from './moisturize-skin-answer/moisturize-skin-answer.component';
 import { QuizService } from '../../../services/quiz.service';
+import { ProgressionBarComponent } from '../../progression-bar/progression-bar.component';
 
 @Component({
   selector: 'app-moisturize-skin',
   standalone: true,
-  imports: [CommonModule, MoisturizeSkinAnswerComponent],
+  imports: [CommonModule, MoisturizeSkinAnswerComponent, ProgressionBarComponent],
   templateUrl: './moisturize-skin.component.html',
   styleUrls: ['./moisturize-skin.component.css']
 })
 export class MoisturizeSkinComponent implements OnInit {
 
-  // page6Answers: any;
+  currentQuizPage: number = 5;
   arrow = "assets/images/arrow.png"
   page6Answers: { [key: string]: any } = {};
   selectedAnswer: string | null = null;

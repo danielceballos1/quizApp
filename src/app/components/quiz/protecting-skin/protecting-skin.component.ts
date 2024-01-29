@@ -1,16 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { QuizService } from '../../../services/quiz.service';
+import { ProgressionBarComponent } from '../../progression-bar/progression-bar.component';
 
 @Component({
   selector: 'app-protecting-skin',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProgressionBarComponent],
   templateUrl: './protecting-skin.component.html',
   styleUrls: ['./protecting-skin.component.css']
 })
 export class ProtectingSkinComponent implements OnInit {
 
+  currentQuizPage : number = 4;
   page5Answers: any;
   image = "assets/images/woman-crepe-halfway-there.gif"
   selectedAnswer: string | null = null;

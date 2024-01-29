@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+.protecting-skin-progress{
+    display: flex;
+    justify-content: center;
+}
+
 .protecting-skin{
     display: flex;
     flex-direction: column;

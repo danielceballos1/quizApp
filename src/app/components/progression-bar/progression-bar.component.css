@@ -1,0 +1,30 @@
+.progress-container {
+  display: flex;
+  align-items: center; 
+  gap: 1.2rem;
+  /* justify-content: center; */
+  padding: 3.2rem 0;
+}
+
+.rectangle-bar {
+  height: 12px;
+  max-width: 42.6rem;
+  min-width: 24.4rem;
+  width: 100%;
+  background-color: var(--clr-gray);
+  position: relative;
+}
+
+.rectangle-progression-gold {
+  height: 1.2rem;
+  background-color: var(--clr-gold);
+  position: absolute;
+}
+
+.arrow-left{
+  font-size: var(--fs-h3);
+  border-style: solid;
+  border: 0px solid var(--clr-gray);
+  padding: 0 6px;
+  background-color: var(--clr-gray);
+}

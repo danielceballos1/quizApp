@@ -2,16 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { QuizService } from '../../../services/quiz.service';
 import { CommonModule } from '@angular/common';
 import { ProblemAreasAnswerComponent } from './problem-areas-answer/problem-areas-answer.component';
+import { ProgressionBarComponent } from '../../progression-bar/progression-bar.component';
 
 @Component({
   selector: 'app-problem-areas',
-  imports: [CommonModule, ProblemAreasAnswerComponent],
+  imports: [CommonModule, ProblemAreasAnswerComponent, ProgressionBarComponent],
   standalone: true,
   templateUrl: './problem-areas.component.html',
   styleUrls: ['./problem-areas.component.css']
 })
 export class ProblemAreasComponent implements OnInit {
 
+  currentQuizPage: number = 1;
   page2Answers: any;
   selectedAnswer: string | null = null;
   arrow = "assets/images/arrow.png"
@@ -45,6 +47,7 @@ export class ProblemAreasComponent implements OnInit {
   onPreviousPage(){
     this.quizService.navigateToPreviousPage();
   }
+
 
 }
   
