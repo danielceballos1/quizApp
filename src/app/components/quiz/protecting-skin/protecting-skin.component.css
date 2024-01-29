@@ -1,7 +1,4 @@
 
-.protecting-skin__description{
-   
-}
 
 .protecting-skin__img{
     max-height: 408px;
@@ -14,8 +11,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px pink solid;
     gap: 4.3rem;
+    margin-bottom: 340px;
 }
 .protecting-skin__content-block{
     max-width: 420px;

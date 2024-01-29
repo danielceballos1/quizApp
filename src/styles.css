@@ -46,7 +46,7 @@ body {
     font-family: var(--ff);
     background-color: var(--clr-blue);
     color: var(--clr-white);
-    min-height: 1080px;
+    /* min-height: 1080px; */
 }
 
 /* HTML font size and text alignment */

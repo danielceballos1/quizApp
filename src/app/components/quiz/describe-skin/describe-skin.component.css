@@ -1,3 +1,7 @@
+.describe-skin{
+    margin-bottom: 360px;
+}
+
 .describe-skin-beauty-quiz-answer__img{
     width: 141px;
     height: auto;
@@ -13,7 +17,7 @@
 }
 
 .clickable-area{
-    width: 3px;
+    width: 4px;
   
 }
 

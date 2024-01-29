@@ -4,6 +4,9 @@
     text-align: left;
 }
 
+.intro{
+    margin-bottom: 376px;
+}
 
  @media only screen and (min-width: 1200px) {
     .intro-content-block {
