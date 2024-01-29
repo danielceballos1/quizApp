@@ -22,6 +22,7 @@
     --fs-h1: 4rem;
     --fs-h2: 2.5rem;
     --fs-h3: 2rem;
+    --fs-answer-text: 2rem;
     --fs-bt: 1.6rem;
     --fs-d: 1.2rem;
 }
@@ -51,18 +52,20 @@ h1 {
     font-family: 'Unna';
     font-size: var(--fs-h1);
     font-weight: 700;
-    width: 100%;
+    /* width: 100%; */
     text-transform: capitalize;
 }
 
 h2 {
     font-size: var(--fs-h2);
-    font-weight: 600;
+    font-weight: 600; 
+    text-transform: capitalize;
 }
 
 h3 {
     font-size: var(--fs-h3);
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 /* Body text styles */
@@ -113,7 +116,7 @@ h3 {
 }
 
 .title-gap {
-    gap: 3.2rem;
+    padding-bottom: 3.2rem;
 }
 
 /* Italic text style */
@@ -123,22 +126,43 @@ h3 {
 
 
 /* beauty quiz answer style */
-
-.beauty-quiz-answer__text{
-    width: 200px;
-    height: auto;
-    border: none;
+.beauty-quiz__answer-text{
+    position: absolute;
+    left: 3.3rem;
+    max-width: 28rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-answer-text); 
 }
-.beauty-quiz-answer__img{
+
+.beauty-quiz__answer-img{
+   display: flex;
     height: 100%;
 }
 
 
-.beauty-quiz-answer__wrapper{
-    height: 135px;
-    width: 517px;
-    border: 1px black solid;
+.beauty-quiz__answer-wrapper{
+    position:relative;
+    height: 133px;
+    max-width: 517px;
+    width: 100%;
     background-color:  var( --clr-slate-default);
     display: flex;
-   justify-content:space-between;
-}
+    justify-content:end;
+} 
+
+
+/* media query */
+
+@media only screen and (max-width: 1200px) {
+    .beauty-quiz__answer-text{
+        max-width: 17rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-content-block__first-word{
+        display: block;
+    }
+  }
