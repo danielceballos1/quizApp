@@ -1,6 +1,153 @@
-<div *ngIf="page4Answers">
-  <app-describe-skin-answer *ngFor="let answer of page4Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-describe-skin-answer>
+
+<div class="section">
+  <div class="container">
+    <div class="beauty-quiz">
+      <!-- <div *ngIf="page4Answers"> -->
+        <!-- <app-describe-skin-answer *ngFor="let answer of page4Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-describe-skin-answer> -->
+
+        <!-- first -->
+        <div class="d-flex describe-skin-beauty-quiz-answer__gap">
+          <img class="describe-skin-beauty-quiz-answer__img" [src]="page4Answers.answer1[1]" alt="">
+          <div class="describe-skin-beauty-quiz-answer__content-box">
+            <h2>How would you describe your skin?</h2>
+            <div class="slider-bar d-flex">
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="describe-skin-beauty-quiz-answer__text-container">
+                <p class="describe-skin-beauty-quiz-answer__text">{{ page4Answers.answer1[0] }}</p>
+                <div class="triangle-down"></div>
+                <div class="oval"></div>
+              </div>        
+            </div>
+            <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+              <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+              <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+            </div>
+          </div>
+        </div>
+        <!-- secon -->
+        <div class="d-flex describe-skin-beauty-quiz-answer__gap">
+          <img class="describe-skin-beauty-quiz-answer__img" [src]="page4Answers.answer2[1]" alt="">
+          <div class="describe-skin-beauty-quiz-answer__content-box">
+            <h2>How would you describe your skin?</h2>
+            <div class="slider-bar d-flex">
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="describe-skin-beauty-quiz-answer__text-container">
+                <p class="describe-skin-beauty-quiz-answer__text">{{ page4Answers.answer2[0] }}</p>
+                <div class="triangle-down"></div>
+                <div class="oval"></div>
+              </div>        
+            </div>
+            <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+              <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+              <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- third -->
+        <div class="d-flex describe-skin-beauty-quiz-answer__gap">
+          <img class="describe-skin-beauty-quiz-answer__img" [src]="page4Answers.answer3[1]" alt="">
+          <div class="describe-skin-beauty-quiz-answer__content-box">
+            <h2>How would you describe your skin?</h2>
+            <div class="slider-bar d-flex">
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="describe-skin-beauty-quiz-answer__text-container">
+                <p class="describe-skin-beauty-quiz-answer__text">{{ page4Answers.answer3[0] }}</p>
+                <div class="triangle-down"></div>
+                <div class="oval"></div>
+              </div>        
+            </div>
+            <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+              <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+              <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth -->
+        <div class="d-flex describe-skin-beauty-quiz-answer__gap">
+          <img class="describe-skin-beauty-quiz-answer__img" [src]="page4Answers.answer4[1]" alt="">
+          <div class="describe-skin-beauty-quiz-answer__content-box">
+            <h2>How would you describe your skin?</h2>
+            <div class="slider-bar d-flex">
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="describe-skin-beauty-quiz-answer__text-container">
+                <p class="describe-skin-beauty-quiz-answer__text">{{ page4Answers.answer4[0] }}</p>
+                <div class="triangle-down"></div>
+                <div class="oval"></div>
+              </div>        
+            </div>
+            <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+              <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+              <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- fith -->
+        <div class="d-flex describe-skin-beauty-quiz-answer__gap">
+          <img class="describe-skin-beauty-quiz-answer__img" [src]="page4Answers.answer5[1]" alt="">
+          <div class="describe-skin-beauty-quiz-answer__content-box">
+            <h2>How would you describe your skin?</h2>
+            <div class="slider-bar d-flex">
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="describe-skin-beauty-quiz-answer__text-container">
+                <p class="describe-skin-beauty-quiz-answer__text">{{ page4Answers.answer5[0] }}</p>
+                <div class="triangle-down"></div>
+                <div class="oval"></div>
+              </div>        
+            </div>
+            <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+              <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+              <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- six -->
+        <div class="d-flex describe-skin-beauty-quiz-answer__gap">
+          <img class="describe-skin-beauty-quiz-answer__img" [src]="page4Answers.answer6[1]" alt="">
+          <div class="describe-skin-beauty-quiz-answer__content-box">
+            <h2>How would you describe your skin?</h2>
+            <div class="slider-bar d-flex">
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="describe-skin-beauty-quiz-answer__text-container">
+                <p class="describe-skin-beauty-quiz-answer__text">{{ page4Answers.answer6[0] }}</p>
+                <div class="triangle-down"></div>
+                <div class="oval"></div>
+              </div>        
+            </div>
+            <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+              <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+              <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 </div>
 
-<button (click)="onNextPage()">Next</button>
-<button (click)="onSkipPage()">Skip</button>

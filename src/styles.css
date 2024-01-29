@@ -171,6 +171,10 @@ padding-top: 1.6rem;
     gap: 1.6rem;
 }
 
+.gap-double{
+    gap: 3.2rem;
+}
+
 .text-gap {
     gap: 1.6rem;
 }

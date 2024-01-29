@@ -14,7 +14,7 @@ export class DescribeSkinComponent implements OnInit {
 
   page4Answers: any;
   selectedAnswer: string | null = null;
-
+  arrow = "assets/images/arrow.png"
   constructor(private quizService: QuizService) {}
 
   ngOnInit(): void {
