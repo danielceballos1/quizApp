@@ -1,0 +1,34 @@
+.body-care-quiz-answer__wrapper {
+    position: relative;
+      height: 133px;
+      max-width: 517px;
+      width: 100%;
+      background-color: var(--clr-slate-default);
+      display: flex;
+     
+    }
+    
+    .circle__container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 33px;
+    }
+  
+    .circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid var(--clr-white); 
+  }
+  
+    .body-care-quiz-answer__text {
+      position: absolute;
+      left: 8.3rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: var(--fs-answer-text); 
+    }
+    
+

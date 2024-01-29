@@ -11,7 +11,7 @@ import { QuizService } from '../../../services/quiz.service';
   styleUrls: ['./body-care.component.css']
 })
 export class BodyCareComponent implements OnInit {
-
+  arrow = "assets/images/arrow.png"
   page7Answers: any;
   selectedAnswer: string | null = null;
 
@@ -30,14 +30,16 @@ export class BodyCareComponent implements OnInit {
   }
 
   onNextPage() {
-    if (this.selectedAnswer) {
+   
       this.quizService.navigateToNextPage();
-    } else {
-      alert('Skip or select answer')
-    }
+   
   }
 
   onSkipPage() {
+    this.quizService.navigateToNextPage();
+  }
+
+  onPreviousPage(){
     this.quizService.navigateToPreviousPage();
   }
 

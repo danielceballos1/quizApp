@@ -1,6 +1,15 @@
-<div *ngIf="page7Answers">
-  <app-body-care-answer *ngFor="let answer of page7Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-body-care-answer>
+<div class="section">
+  <div class="container">
+    <div class="beauty-quiz">
+      <h2 class="title-gap body-care-quiz-answer__title">How much time do you spend on body care daily:</h2>
+      <div class="beauty-quiz__align-center gap" *ngIf="page7Answers">
+        <app-body-care-answer *ngFor="let answer of page7Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-body-care-answer>
+      </div>
+      <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+        <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
+        <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+      </div>
+    </div>
+    
+  </div>
 </div>
-
-<button (click)="onNextPage()">Next</button>
-<button (click)="onSkipPage()">Skip</button>
