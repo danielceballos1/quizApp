@@ -7,16 +7,19 @@ import { ProgressionBarComponent } from '../../progression-bar/progression-bar.c
 @Component({
   standalone: true,
   selector: 'app-previous-skincare',
-  imports: [CommonModule, PreviousSkincareAnswerComponent, ProgressionBarComponent],
+  imports: [
+    CommonModule,
+    PreviousSkincareAnswerComponent,
+    ProgressionBarComponent,
+  ],
   templateUrl: './previous-skincare.component.html',
-  styleUrls: ['./previous-skincare.component.css']
+  styleUrls: ['./previous-skincare.component.css'],
 })
 export class PreviousSkincareComponent implements OnInit {
-
-  currentQuizPage : number = 7;
+  currentQuizPage: number = 7;
   isSubmitClicked: boolean = false;
-  arrow = "assets/images/arrow.png"
-  x = "assets/images/❌.png"
+  arrow = 'assets/images/arrow.png';
+  x = 'assets/images/❌.png';
   page8Answers: any;
   selectedAnswer: string | null = null;
 
@@ -38,22 +41,19 @@ export class PreviousSkincareComponent implements OnInit {
     if (this.selectedAnswer) {
       this.isSubmitClicked = true;
     } else {
-      alert('Skip or select answer')
+      alert('Skip or select answer');
     }
   }
 
   onSkipPage() {
-    // this.quizService.navigateToNextPage();
     if (this.selectedAnswer) {
       this.isSubmitClicked = true;
     } else {
-      alert('Last page, select answer')
+      alert('Last page, select answer');
     }
   }
 
-  onPreviousPage(){
+  onPreviousPage() {
     this.quizService.navigateToPreviousPage();
   }
-
 }
-  

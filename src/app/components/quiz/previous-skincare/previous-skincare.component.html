@@ -1,25 +1,42 @@
-
-
 <div class="previous-skincare section">
   <div class="container">
     <div class="beauty-quiz">
-      <app-progression-bar [currentQuizPage]="currentQuizPage"></app-progression-bar>
-      <h2 class="title-gap beauty-quiz--title">Have you experienced any of these issues in your previous skincare attempts? </h2>
+      <app-progression-bar
+        [currentQuizPage]="currentQuizPage"
+      ></app-progression-bar>
+      <h2 class="title-gap beauty-quiz--title">
+        Have you experienced any of these issues in your previous skincare
+        attempts?
+      </h2>
       <div class="beauty-quiz__align-center text-gap" *ngIf="page8Answers">
-        <app-previous-skincare-answer *ngFor="let answer of page8Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-previous-skincare-answer>
+        <app-previous-skincare-answer
+          *ngFor="let answer of page8Answers | keyvalue"
+          [answer]="answer.value"
+          (answerClicked)="onAnswerClick($event)"
+        ></app-previous-skincare-answer>
       </div>
 
       <div class="quiz__btn-wrapper btn__gap padding-top-gap">
-        <button class="quiz__btn-none-of-above" (click)="onNextPage()"><span><img  class="x"[src]="x" alt="Continue button"></span>None of the Above </button>
-        <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
-        <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+        <button class="quiz__btn-none-of-above" (click)="onNextPage()">
+          <span><img class="x" [src]="x" alt="Continue button" /></span>None of
+          the Above
+        </button>
+        <button class="quiz__btn-continue" (click)="onNextPage()">
+          Continue
+          <span><img class="arrow" [src]="arrow" alt="Continue button" /></span>
+        </button>
+        <button class="quiz__btn-skip" (click)="onSkipPage()">Skip</button>
       </div>
 
       <div *ngIf="isSubmitClicked" class="submited-text">
         <h3 class="submited-text__title">Thanks for sharing!</h3>
-        <p class="submited-text__description">We’ve discovered that a lot of people have faced the same setbacks. City Beauty has a clear one-step treatment that is easy to follow with long-term results. In less than two minutes, you will feel better than ever. </p>
+        <p class="submited-text__description">
+          We’ve discovered that a lot of people have faced the same setbacks.
+          City Beauty has a clear one-step treatment that is easy to follow with
+          long-term results. In less than two minutes, you will feel better than
+          ever.
+        </p>
       </div>
     </div>
-    
   </div>
 </div>

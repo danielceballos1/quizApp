@@ -12,7 +12,6 @@ export class BodyCareAnswerComponent implements OnInit {
   @Output() answerClicked = new EventEmitter<string>();
 
   ngOnInit(): void {
-    
   }
 
   onClick(): void {

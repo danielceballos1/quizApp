@@ -1,32 +1,44 @@
-<div class=" section">
+<div class="section">
   <div class="container">
-
     <div class="protecting-skin-progress">
-      <app-progression-bar [currentQuizPage]="currentQuizPage"></app-progression-bar>
+      <app-progression-bar
+        [currentQuizPage]="currentQuizPage"
+      ></app-progression-bar>
     </div>
-    
-      <div class="protecting-skin padding-top-70">
+
+    <div class="protecting-skin padding-top-70">
       <div *ngIf="page5Answers">
-          <img class="protecting-skin__img" [src]="image" alt="">
+        <img class="protecting-skin__img" [src]="image" alt="" />
       </div>
       <div class="protecting-skin__content-block">
         <h3>Halfway there!</h3>
-        <h2>Why do people give up protecting
-          and hydrating their skin?</h2>
-          <div class="protecting-skin__description__wrapper gap">
-            <p class="">The No. 1 reason is using the wrong products that just aren’t effective </p>
-            <p>You’ll achieve much more in just a few weeks of starting City Beauty’s treatment. 
-            <p> Our primary goal is to deliver deep, long-lasting hydration that will prevent harsh aging and reduce the appearance of thinning, crepey skin. Visibly achieve healthy, supple skin with us. </p>
-          </div>
-         
-           
-            <div class="quiz__btn-wrapper btn__gap padding-top-gap">
-              <button class="quiz__btn-continue" (click)="onNextPage()">Got it <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
-              <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
-            </div>
+        <h2>Why do people give up protecting and hydrating their skin?</h2>
+        <div class="protecting-skin__description__wrapper gap">
+          <p class="">
+            The No. 1 reason is using the wrong products that just aren’t
+            effective
+          </p>
+          <p>
+            You’ll achieve much more in just a few weeks of starting City
+            Beauty’s treatment.
+          </p>
+          <p>
+            Our primary goal is to deliver deep, long-lasting hydration that
+            will prevent harsh aging and reduce the appearance of thinning,
+            crepey skin. Visibly achieve healthy, supple skin with us.
+          </p>
+        </div>
+
+        <div class="quiz__btn-wrapper btn__gap padding-top-gap">
+          <button class="quiz__btn-continue" (click)="onNextPage()">
+            Got it
+            <span
+              ><img class="arrow" [src]="arrow" alt="Continue button"
+            /></span>
+          </button>
+          <button class="quiz__btn-skip" (click)="onSkipPage()">Skip</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-

@@ -1,20 +1,24 @@
 <div class="problem-area section">
   <div class="container">
-
     <div class="beauty-quiz">
-      <app-progression-bar [currentQuizPage]="currentQuizPage"></app-progression-bar>
+      <app-progression-bar
+        [currentQuizPage]="currentQuizPage"
+      ></app-progression-bar>
       <h2 class="title-gap">Select problem areas</h2>
       <div class="beauty-quiz__align-center text-gap" *ngIf="page2Answers">
-        <app-problem-areas-answer *ngFor="let answer of page2Answers | keyvalue" [answer]="answer.value" (answerClicked)="onAnswerClick($event)"></app-problem-areas-answer>
+        <app-problem-areas-answer
+          *ngFor="let answer of page2Answers | keyvalue"
+          [answer]="answer.value"
+          (answerClicked)="onAnswerClick($event)"
+        ></app-problem-areas-answer>
       </div>
       <div class="quiz__btn-wrapper btn__gap padding-top-gap">
-        <button class="quiz__btn-continue" (click)="onNextPage()">Continue <span><img  class="arrow"[src]="arrow" alt="Continue button"></span></button>
-        <button class="quiz__btn-skip"(click)="onSkipPage()">Skip</button>
+        <button class="quiz__btn-continue" (click)="onNextPage()">
+          Continue
+          <span><img class="arrow" [src]="arrow" alt="Continue button" /></span>
+        </button>
+        <button class="quiz__btn-skip" (click)="onSkipPage()">Skip</button>
       </div>
     </div>
-    
   </div>
 </div>
-
-
-

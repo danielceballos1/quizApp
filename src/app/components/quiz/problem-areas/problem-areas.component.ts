@@ -9,14 +9,13 @@ import { ProgressionBarComponent } from '../../progression-bar/progression-bar.c
   imports: [CommonModule, ProblemAreasAnswerComponent, ProgressionBarComponent],
   standalone: true,
   templateUrl: './problem-areas.component.html',
-  styleUrls: ['./problem-areas.component.css']
+  styleUrls: ['./problem-areas.component.css'],
 })
 export class ProblemAreasComponent implements OnInit {
-
   currentQuizPage: number = 1;
   page2Answers: any;
   selectedAnswer: string | null = null;
-  arrow = "assets/images/arrow.png"
+  arrow = 'assets/images/arrow.png';
 
   constructor(private quizService: QuizService) {}
 
@@ -36,7 +35,7 @@ export class ProblemAreasComponent implements OnInit {
     if (this.selectedAnswer) {
       this.quizService.navigateToNextPage();
     } else {
-      alert('Skip or select answer')
+      alert('Skip or select answer');
     }
   }
 
@@ -44,10 +43,7 @@ export class ProblemAreasComponent implements OnInit {
     this.quizService.navigateToNextPage();
   }
 
-  onPreviousPage(){
+  onPreviousPage() {
     this.quizService.navigateToPreviousPage();
   }
-
-
 }
-  

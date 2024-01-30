@@ -10,36 +10,32 @@ import { MoisturizeSkinComponent } from './moisturize-skin/moisturize-skin.compo
 import { BodyCareComponent } from './body-care/body-care.component';
 import { PreviousSkincareComponent } from './previous-skincare/previous-skincare.component';
 
-
 @Component({
   selector: 'app-quiz',
   standalone: true,
-  providers: [ QuizService],
+  providers: [QuizService],
   imports: [
     CommonModule,
-    IntroComponent, 
-    ProblemAreasComponent, 
+    IntroComponent,
+    ProblemAreasComponent,
     HydratingIngredientsComponent,
     DescribeSkinComponent,
     ProtectingSkinComponent,
     MoisturizeSkinComponent,
     BodyCareComponent,
-    PreviousSkincareComponent],
+    PreviousSkincareComponent,
+  ],
   templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.css']
+  styleUrls: ['./quiz.component.css'],
 })
 export class QuizComponent implements OnInit {
-
   currentPage: number = 1;
 
   constructor(private quizService: QuizService) {}
 
-
   ngOnInit() {
-
-  this.quizService.currentPage$.subscribe((page) => {
-    this.currentPage = page;
-  });
+    this.quizService.currentPage$.subscribe((page) => {
+      this.currentPage = page;
+    });
   }
-
 }

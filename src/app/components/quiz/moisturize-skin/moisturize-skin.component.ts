@@ -32,7 +32,6 @@ export class MoisturizeSkinComponent implements OnInit {
       this.selectedRectangleIndex = index;
       console.log('Selected Rectangle Index:', this.selectedRectangleIndex);
   
-      // Fetch and set the corresponding data for the selected rectangle
       if (this.selectedRectangleIndex !== null) {
         const selectedAnswerKey : any = 'answer' + this.selectedRectangleIndex;
         this.selectedAnswer = this.page6Answers[selectedAnswerKey as keyof typeof this.page6Answers];
