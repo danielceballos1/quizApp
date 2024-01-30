@@ -24,3 +24,45 @@ background-color: var(--clr-gray);
 .moisturize-beauty-quiz__sub-title{
     font-size: var(--fs-bt);
 }
+
+.rec1{
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+.rec2{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+.rec3{
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;
+}
+.rec4{
+    background-color: rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+.rec5{
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.rec6{
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.rec7{
+    background-color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+.rec8{
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+.rec9{
+    background-color: rgba(255,255,255,0.9);
+    cursor: pointer;
+}
+.rec10{
+    background-color: rgba(255,255,255,1);
+    cursor: pointer;
+}

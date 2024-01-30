@@ -1,13 +1,25 @@
 .previous-skincare-quiz-answer__wrapper {
-    position: relative;
-      height: 133px;
-      max-width: 517px;
+      position: relative;
+      height: var(--answer-height);
+      max-width: var(--max-width);
       width: 100%;
-      background-color: var(--clr-slate-default);
+      background-color:  var( --clr-slate-default);
+      border: 2px solid var(--clr-slate-default);
       display: flex;
-     
+      transition: border-color 0.3s; 
+      cursor: pointer;
     }
     
+    .previous-skincare-quiz-answer__wrapper:hover {
+      border-color: var(--clr-slate-hover);
+      background-color: var(--clr-slate-hover);
+  }
+
+  .previous-skincare-quiz-answer__wrapper.clicked {
+    border-color: var(--clr-gold);
+    background-color: var(--clr-gold);
+  }
+
     .square__container{
       display: flex;
       justify-content: center;

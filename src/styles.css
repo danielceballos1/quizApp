@@ -163,7 +163,6 @@ h3 {
 }
 
 .container {
-    border: 1px white solid;
     padding: 0;
 }
 
@@ -241,15 +240,25 @@ padding-top: 1.6rem;
 }
 
 
+
 .beauty-quiz__answer-wrapper{
     position:relative;
     height: var(--answer-height);
     max-width: var(--max-width);
     width: 100%;
     background-color:  var( --clr-slate-default);
+    border: 2px solid var(--clr-slate-default);
     display: flex;
     justify-content:end;
+    transition: border-color 0.3s; 
+    cursor: pointer;
 } 
+
+.beauty-quiz__answer-wrapper:hover {
+    border-color: var(--clr-slate-hover);
+    background-color: var(--clr-slate-hover);
+}
+
 
 .beauty-quiz__align-center{
     display: flex;

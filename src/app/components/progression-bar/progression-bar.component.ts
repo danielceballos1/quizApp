@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { QuizService } from '../../services/quiz.service';
 
 @Component({
   selector: 'app-progression-bar',
@@ -12,7 +13,7 @@ export class ProgressionBarComponent implements OnInit {
   // back-btn : 'assets/images/arrow.png'
   backBtn = "assets/images/arrow.png"
 
-  constructor() { }
+  constructor(private quizService: QuizService) { }
 
   calculateProgressWidth(): string {
     const totalQuizPages = 7;
@@ -21,6 +22,10 @@ export class ProgressionBarComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onPreviousPage(){
+    this.quizService.navigateToPreviousPage();
   }
 
 }

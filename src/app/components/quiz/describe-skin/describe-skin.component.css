@@ -10,16 +10,19 @@
 .describe-skin-beauty-quiz-answer__content-box{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     gap: 3.2rem;
 
 }
 
+
+
 .clickable-area{
-    width: 4px;
-  
+    width: 6px;
+    cursor: pointer;
 }
+
+
 
 .slider-bar{
     padding-top: 4.8rem;
@@ -38,7 +41,7 @@ background-color: var(--clr-gray);
 .describe-skin-beauty-quiz-answer__text-container--normal-skin{
     position: absolute;
     top: -8px;
-    left: -54px;
+    left: -48px;
     height: 29px;
     width: 109px;
     background-color: var(--clr-gray);
@@ -47,7 +50,7 @@ background-color: var(--clr-gray);
 .describe-skin-beauty-quiz-answer__text-container--dry-skin{
     position: absolute;
     top: -8px;
-    left: -12px;
+    left: -1px;
     height: 29px;
     width: 109px;
     background-color: var(--clr-gray);
@@ -56,7 +59,7 @@ background-color: var(--clr-gray);
 .describe-skin-beauty-quiz-answer__text-container-l--microwrinkles{
     position: absolute;
     top: -8px;
-    left: 31px;
+    left: 41px;
     height: 29px;
     width: 119px;
     background-color: var(--clr-gray);
@@ -65,7 +68,7 @@ background-color: var(--clr-gray);
 .describe-skin-beauty-quiz-answer__text-container-xl--scaly{
     position: absolute;
     top: -8px;
-    left: 80px;
+    left: 81px;
     height: 29px;
     width: 155px;
     background-color: var(--clr-gray);
@@ -74,7 +77,7 @@ background-color: var(--clr-gray);
 .describe-skin-beauty-quiz-answer__text-container-xl--itchy{
     position: absolute;
     top: -8px;
-    left: 120px;
+    left: 125px;
     height: 29px;
     width: 155px;
     background-color: var(--clr-gray);
@@ -83,7 +86,7 @@ background-color: var(--clr-gray);
 .describe-skin-beauty-quiz-answer__text-container--crepey{
     position: absolute;
     top: -8px;
-    left: 160px;
+    left: 172px;
     height: 29px;
     width: 109px;
     background-color: var(--clr-gray);

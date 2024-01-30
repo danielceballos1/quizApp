@@ -1,12 +1,20 @@
 .body-care-quiz-answer__wrapper {
     position: relative;
-      height: 133px;
-      max-width: 517px;
+    height: var(--answer-height);
+    max-width: var(--max-width);
       width: 100%;
       background-color: var(--clr-slate-default);
+      border-color: var(--clr-slate-hover);
       display: flex;
-     
+      transition: border-color 0.3s; 
+      cursor: pointer;
     }
+
+    .body-care-quiz-answer__wrapper:hover {
+      border-color: var(--clr-slate-hover);
+      background-color: var(--clr-slate-hover); 
+  }
+
     
     .circle__container{
       display: flex;

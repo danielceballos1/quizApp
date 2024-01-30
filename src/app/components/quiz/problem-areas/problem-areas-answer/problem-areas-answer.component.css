@@ -1,12 +1,20 @@
  .problem-area__beauty-quiz-answer-wrapper {
-  position: relative;
-    height: 133px;
-    max-width: 517px;
+    position: relative;
+    height: var(--answer-height);
+    max-width: var(--max-width);
     width: 100%;
     background-color: var(--clr-slate-default);
+    border:var(--clr-slate-default); ;
     display: flex;
+    cursor: pointer;
+    transition: border-color 0.3s; 
    
   }
+
+  .problem-area__beauty-quiz-answer-wrapper:hover {
+    border-color: var(--clr-slate-hover);
+    background-color: var(--clr-slate-hover); 
+}
   
   .square__container{
     display: flex;

@@ -4,6 +4,7 @@ text-align: left;
 flex-direction: column;
 justify-content: center;
 padding-left: 3.3rem;
+cursor: pointer;
 } 
 
 .moisturize-beauty-quiz__description{

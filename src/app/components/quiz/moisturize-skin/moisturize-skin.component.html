@@ -7,8 +7,21 @@
         <p class="moisturize-beauty-quiz__sub-title">Choose your current level to align with your routine</p>
       </div>
     
-      <div class="moisturize-beauty-quiz__slider-bar d-flex">
+      <!-- <div class="moisturize-beauty-quiz__slider-bar d-flex">
         <div class="rectangle" *ngFor="let index of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" (click)="onRectangleClick(index)"></div>
+      </div> -->
+
+      <div class="moisturize-beauty-quiz__slider-bar d-flex">
+  <div class="rectangle rec1" (click)="onRectangleClick(1)"></div>
+  <div class="rectangle rec2" (click)="onRectangleClick(2)"></div>
+  <div class="rectangle rec3" (click)="onRectangleClick(3)"></div>
+  <div class="rectangle rec4" (click)="onRectangleClick(4)"></div>
+  <div class="rectangle rec5" (click)="onRectangleClick(5)"></div>
+  <div class="rectangle rec6" (click)="onRectangleClick(6)"></div>
+  <div class="rectangle rec6" (click)="onRectangleClick(7)"></div>
+  <div class="rectangle rec8" (click)="onRectangleClick(8)"></div>
+  <div class="rectangle rec9" (click)="onRectangleClick(9)"></div>
+  <div class="rectangle rec10" (click)="onRectangleClick(10)"></div>
       </div>
     
       <div *ngIf="page6Answers">
