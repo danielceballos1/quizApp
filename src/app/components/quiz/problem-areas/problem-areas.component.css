@@ -1,3 +1,10 @@
 .problem-area{
     margin-bottom: 193px;
 }
+.test-box  {
+    border:1px transparent solid ;
+}
+
+.bord{
+    border-color: red;
+}

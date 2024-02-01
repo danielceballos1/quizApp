@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ProblemAreasAnswerComponent } from './problem-areas-answer/problem-areas-answer.component';
 import { ProgressionBarComponent } from '../../progression-bar/progression-bar.component';
 
+
 @Component({
   selector: 'app-problem-areas',
   imports: [CommonModule, ProblemAreasAnswerComponent, ProgressionBarComponent],
@@ -23,6 +24,7 @@ export class ProblemAreasComponent implements OnInit {
     this.quizService.loadQuestions().subscribe((data: any) => {
       this.page2Answers = data['page2'];
       console.log('Page 2 Answers:', this.page2Answers);
+      console.log('Page 2 :', this.page2Answers);
     });
   }
 

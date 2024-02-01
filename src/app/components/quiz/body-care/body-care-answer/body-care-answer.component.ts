@@ -1,8 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { BorderChangeDirective } from '../../../../directive/border-change.directive';
 
 @Component({
   selector: 'app-body-care-answer',
   standalone: true,
+  imports: [BorderChangeDirective],
   templateUrl: './body-care-answer.component.html',
   styleUrls: ['./body-care-answer.component.css']
 })

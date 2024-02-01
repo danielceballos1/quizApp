@@ -88,16 +88,6 @@ h3 {
 }
 
 /* Button and button states styles */
-.active {
-    opacity: 100%;
-    color: var(--clr-btn);
-}
-
-.inactive {
-    opacity: 60%;
-    color: var(--clr-btn);
-}
-
 .quiz__btn-wrapper{
     display: flex;
     flex-direction: column;
@@ -166,7 +156,6 @@ h3 {
 
 
 /* Padding utility classes */
-
 .padding-top-gap{
 padding-top: 1.6rem;
 }
@@ -214,6 +203,7 @@ padding-top: 1.6rem;
     text-align: left;
  }
 
+
  .beauty-quiz__container{
     display: flex;
     flex-direction: column;
@@ -236,6 +226,16 @@ padding-top: 1.6rem;
     height: 100%;
 }
 
+
+.moisturize-beauty-quiz__wrapper{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3.3rem;
+    cursor: pointer;
+    } 
+
 .beauty-quiz__answer-wrapper{
     position:relative;
     height: var(--answer-height);
@@ -254,7 +254,6 @@ padding-top: 1.6rem;
     background-color: var(--clr-slate-hover);
 }
 
-
 .beauty-quiz__align-center{
     display: flex;
     flex-direction: column;
@@ -269,6 +268,22 @@ padding-top: 1.6rem;
     height: 24px;
     width: 24px;
 }
+
+/* square checkbox */
+
+.square__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33px;
+  }
+  
+  .square {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--clr-white);
+    box-sizing: border-box;
+  }
 
 /* media query */
 @media only screen and (max-width: 1200px) {

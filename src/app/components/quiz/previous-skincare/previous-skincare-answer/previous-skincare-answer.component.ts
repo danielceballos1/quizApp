@@ -1,8 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { BorderChangeDirective } from '../../../../directive/border-change.directive';
 
 @Component({
   selector: 'app-previous-skincare-answer',
   standalone: true,
+  imports: [BorderChangeDirective],
   templateUrl: './previous-skincare-answer.component.html',
   styleUrls: ['./previous-skincare-answer.component.css'],
 })

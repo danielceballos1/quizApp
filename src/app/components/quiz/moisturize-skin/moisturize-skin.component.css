@@ -10,18 +10,14 @@
     align-items: center;
     justify-content: center;
 }
-.moisturize-beauty-quiz{
-    text-align: left;
-    max-width: 515px;
-    margin: 0 auto;
-}
+
 .rectangle{
 height: 7px;
 width: 50px;
 background-color: var(--clr-gray);
 }
 
-.moisturize-beauty-quiz__sub-title{
+.beauty-quiz__moisturize-sub-title{
     font-size: var(--fs-bt);
 }
 
@@ -66,3 +62,7 @@ background-color: var(--clr-gray);
     background-color: rgba(255,255,255,1);
     cursor: pointer;
 }
+
+
+
+/* */

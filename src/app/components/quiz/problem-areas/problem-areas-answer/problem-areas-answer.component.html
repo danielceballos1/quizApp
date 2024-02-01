@@ -1,7 +1,7 @@
-<div class="problem-area__beauty-quiz-answer-wrapper" (click)="onClick()">
+<div appBorderChange class="beauty-quiz__answer-wrapper beauty-quiz__answer-wrapper--jc-end" (click)="onClick()">
   <div class="square__container">
     <div class="square"></div>
   </div>
-  <p class="problem-area__beauty-quiz-answer-text">{{ answer[0] }}</p>
-  <img class="problem-area__beauty-quiz-answer-img" [src]="answer[1]" alt="">
+  <p class="beauty-quiz__answer-text beauty-quiz__answer-text--problem-area">{{ answer[0] }}</p>
+  <img class="beauty-quiz__answer-img--problem-area" [src]="answer[1]" alt="">
 </div>

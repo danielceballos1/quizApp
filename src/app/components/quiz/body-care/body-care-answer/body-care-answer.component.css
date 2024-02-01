@@ -4,7 +4,7 @@
     max-width: var(--max-width);
       width: 100%;
       background-color: var(--clr-slate-default);
-      border-color: var(--clr-slate-hover);
+      border: 2px solid var(--clr-slate-default);
       display: flex;
       transition: border-color 0.3s; 
       cursor: pointer;

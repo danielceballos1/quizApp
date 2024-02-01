@@ -1,12 +1,12 @@
 <div class="moisturize section">
   <div class="container">
-    <div class="moisturize-beauty-quiz">
+    <div class="beauty-quiz">
       <app-progression-bar
         [currentQuizPage]="currentQuizPage"
       ></app-progression-bar>
-      <div class="moisturize-beauty-quiz__title">
+      <div class="beauty-quiz__moisturize-title">
         <h2>How often do you moisturize your skin?</h2>
-        <p class="moisturize-beauty-quiz__sub-title">
+        <p class="beauty-quiz__moisturize-sub-title">
           Choose your current level to align with your routine
         </p>
       </div>
@@ -36,6 +36,15 @@
           ></app-moisturize-skin-answer>
         </ng-container>
       </div>
+
+
+
+
+
+
+
+
+
 
       <div class="quiz__btn-wrapper btn__gap padding-top-gap">
         <button class="quiz__btn-continue" (click)="onNextPage()">

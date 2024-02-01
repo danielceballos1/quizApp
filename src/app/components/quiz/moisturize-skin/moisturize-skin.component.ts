@@ -59,5 +59,10 @@ export class MoisturizeSkinComponent implements OnInit {
   onSkipPage() {
   this.quizService.navigateToNextPage();
   }
+
+ 
 }
   
+
+
+
