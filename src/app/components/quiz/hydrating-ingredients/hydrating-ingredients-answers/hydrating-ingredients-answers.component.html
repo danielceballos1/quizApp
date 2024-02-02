@@ -2,8 +2,9 @@
   <div class="d-flex gap">
     <div class="square-container">
       <div class="square"></div>
+      <img  *ngIf="checkmark" class="checkmark" class="checkmark checkmark__hydrating-ingredients" src="assets/images/✓.png" alt="">
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column min-height">
       <p class="beauty-quiz-answer__text--hydrating-ingredients">{{ answer[0] }}</p>
       <p class="beauty-quiz-answer__basic-text--hydrating-ingredients">{{ answer[1] }}</p>
     </div>

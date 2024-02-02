@@ -1,6 +1,7 @@
 <div appBorderChange class="beauty-quiz__answer-wrapper beauty-quiz__answer-wrapper--jc-end" (click)="onClick()">
   <div class="square__container">
     <div class="square"></div>
+    <img  *ngIf="checkmark" class="checkmark checkmark__problem-areas" class="checkmark" src="assets/images/✓.png" alt="">
   </div>
   <p class="beauty-quiz__answer-text beauty-quiz__answer-text--problem-area">{{ answer[0] }}</p>
   <img class="beauty-quiz__answer-img--problem-area" [src]="answer[1]" alt="">

@@ -13,6 +13,9 @@
   font-size: var(--fs-answer-text);
 }
 
+.checkmark__problem-areas{
+  left: 36px;
+}
 
 /* Media query for larger screens */
 

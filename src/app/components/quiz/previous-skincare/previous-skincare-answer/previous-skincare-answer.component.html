@@ -1,6 +1,7 @@
 <div appBorderChange class="previous-skincare-quiz-answer__wrapper" (click)="onClick()">
   <div class="square__container">
     <div class="square"></div>
+    <img  *ngIf="checkmark" class="checkmark checkmark__previous-skincare" class="checkmark" src="assets/images/✓.png" alt="">
   </div>
   <p class="previous-skincare-quiz-answer__text">{{ answer}}</p>
 </div>

@@ -12,3 +12,24 @@
   justify-content: left;
   align-items: center;
 }
+
+.checkmark__hydrating-ingredients{
+  left: 18px;
+  top: 2px;
+}
+
+.min-height{
+  height: 122px;
+}
+
+
+@media (min-width : 700px) {
+  .min-height{
+    height: 100px;
+  }
+  .checkmark__hydrating-ingredients{
+    left: 18px;
+    top: 13px;
+  }
+  
+}
