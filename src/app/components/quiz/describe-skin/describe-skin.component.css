@@ -2,133 +2,125 @@
   margin-bottom: 360px;
 }
 
-.describe-skin-beauty-quiz-answer__img {
-  width: 141px;
-  height: auto;
+.beauty-quiz__extend-width{
+max-width: 770px;
+width: 100%;
 }
 
-.describe-skin-beauty-quiz-answer__content-box {
+.beauty-quiz-answer__img-container{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.beauty-quiz-answer__describe-skin-content-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3.2rem;
 }
 
-.clickable-area {
-  width: 6px;
-  cursor: pointer;
-}
-
-.slider-bar {
-  padding-top: 4.8rem;
-  /* gap: 2px; */
-  position: relative;
+.slider-bar{
+  padding: 6rem 0;
+  font-size: var(--fs-bt);
+  gap: 2px;
   margin: 0 auto;
 }
 
-.rectangle {
+.rectangle{
   height: 7px;
   width: 41px;
   background-color: var(--clr-gray);
 }
 
-.describe-skin-beauty-quiz-answer__text-container--normal-skin {
-  position: absolute;
-  top: -8px;
-  left: -48px;
-  height: 29px;
-  width: 109px;
-  background-color: var(--clr-gray);
-}
+ .clickable-area-1,
+ .clickable-area-2,
+ .clickable-area-3,
+ .clickable-area-4,
+ .clickable-area-5,
+ .clickable-area-6
+ {
+  width: 2px;
+  position: relative;
+  cursor: pointer;
+ }
 
-.describe-skin-beauty-quiz-answer__text-container--dry-skin {
-  position: absolute;
-  top: -8px;
-  left: -1px;
-  height: 29px;
-  width: 109px;
-  background-color: var(--clr-gray);
-}
 
-.describe-skin-beauty-quiz-answer__text-container-l--microwrinkles {
-  position: absolute;
-  top: -8px;
-  left: 41px;
-  height: 29px;
-  width: 119px;
-  background-color: var(--clr-gray);
-}
 
-.describe-skin-beauty-quiz-answer__text-container-xl--scaly {
+ .answer-3-con,
+ .answer-4-con,
+ .answer-5-con
+
+ {
   position: absolute;
-  top: -8px;
-  left: 81px;
+  top: -58px;
+  left: -75px;
   height: 29px;
   width: 155px;
   background-color: var(--clr-gray);
+  cursor: pointer; 
 }
-
-.describe-skin-beauty-quiz-answer__text-container-xl--itchy {
+.answer-1-con,
+.answer-2-con,
+.answer-6-con{
   position: absolute;
-  top: -8px;
-  left: 125px;
+  top: -58px;
+  left: -50px;
   height: 29px;
-  width: 155px;
+  width: 100px;
   background-color: var(--clr-gray);
-}
-
-.describe-skin-beauty-quiz-answer__text-container--crepey {
-  position: absolute;
-  top: -8px;
-  left: 172px;
-  height: 29px;
-  width: 109px;
-  background-color: var(--clr-gray);
+  cursor: pointer; 
 }
 
 .oval {
   position: absolute;
   box-sizing: border-box;
+  z-index: 999;
   height: 25px;
   width: 25px;
-  left: 44px;
-  bottom: -44px;
+  left: -13px;
+  top: -10px;
   border-radius: 50%;
   border: 2px solid #0c233f;
   background-color: var(--clr-gold);
 }
 
-.describe-skin-beauty-quiz-answer__gap {
-  gap: 8.2rem;
-}
-
-.describe-skin-beauty-quiz-answer__text {
-  font-size: var(--fs-bt);
-  text-align: center;
-}
-
 .triangle-down {
+  position: absolute;
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid var(--clr-gray);
-  position: absolute;
-  bottom: -10px;
-  left: 35px;
+ 
+  top: -30px;
+  left: -20px;
 }
 
-.describe-skin-beauty-quiz-answer__img-wrapper {
-  display: flex;
-  justify-content: center;
-}
+
 
 @media (min-width: 600px) {
   .rectangle {
     width: 71px;
   }
+  .slider-bar {
+    margin: 0; 
+  }
 
-  .describe-skin-beauty-quiz-answer__text-container--normal-skin {
+  
+}
+
+
+
+
+
+
+
+/* .describe-skin-beauty-quiz-answer__text {
+  font-size: var(--fs-bt);
+  text-align: center;
+} */
+
+  /* .describe-skin-beauty-quiz-answer__text-container--normal-skin {
     left: -54px;
   }
 
@@ -150,5 +142,4 @@
 
   .describe-skin-beauty-quiz-answer__text-container--crepey {
     left: 316px;
-  }
-}
+  } */

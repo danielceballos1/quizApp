@@ -1,11 +1,12 @@
-.progress-bar__container {
+.progression-bar__container {
   display: flex;
   align-items: center; 
   gap: 1.2rem;
   padding: 3.2rem 0;
+  justify-content: center;
 }
 
-.rectangle-bar {
+.progression-bar__rectangle-bar {
   height: 12px;
   max-width: 42.6rem;
   min-width: 24.4rem;
@@ -14,13 +15,13 @@
   position: relative;
 }
 
-.rectangle-progression-gold {
+.progression-bar__rectangle-progression-gold {
   height: 1.2rem;
   background-color: var(--clr-gold);
   position: absolute;
 }
 
-.arrow-left{
+.progression-bar__arrow-back-btn{
   font-size: var(--fs-h3);
   border-style: solid;
   border: 0px solid var(--clr-gray);
@@ -29,6 +30,6 @@
   cursor: pointer;
 }
 
-.progress-bar__counter{
+.progression-bar__counter{
   font-size: var(--fs-bt);
 }

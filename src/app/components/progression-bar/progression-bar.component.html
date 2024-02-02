@@ -1,7 +1,7 @@
-<div class="progress-bar__container">
-  <span (click)="onPreviousPage()" class="arrow-left">&lt;</span>
-  <div class="rectangle-bar">
-    <div class="rectangle-progression-gold" [style.width]="calculateProgressWidth()"></div>
+<div class="progression-bar__container">
+  <span (click)="onPreviousPage()" class="progression-bar__arrow-back-btn">&lt;</span>
+  <div class="progression-bar__rectangle-bar">
+    <div class="progression-bar__rectangle-progression-gold" [style.width]="calculateProgressWidth()"></div>
   </div>
-  <span class="progress-bar__counter">{{currentQuizPage}}/{{totalQuizPages}}</span>
+  <span class="progression-bar__counter">{{currentQuizPage}}/{{totalQuizPages}}</span>
 </div>

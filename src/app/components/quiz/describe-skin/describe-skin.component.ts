@@ -30,13 +30,11 @@ export class DescribeSkinComponent implements OnInit {
   onLeftClick(index: number) {
     console.log(`Left click on rectangle ${index}`);
     this.selectedRectangleIndex = index;
-    // Handle left click logic here
   }
   
   onRightClick(index: number) {
     console.log(`Right click on rectangle ${index}`);
     this.selectedRectangleIndex = index;
-    // Handle right click logic here
   }
   
   onAnswerClick(answer: string): void {
